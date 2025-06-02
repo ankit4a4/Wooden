@@ -1,0 +1,74 @@
+.Homeimagesection_Container {
+  height: 75vh;
+  width: 100%;
+  color: var(--baseBlack);
+  display: flex;
+  background-color: var(--baseWhite);
+
+  align-items: center;
+  padding: 0 3.5rem;
+  margin-top: 4%;
+  gap: 1rem;
+}
+.Homeimagesection_leftImage {
+  width: 40%;
+  height: 100%;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.Homeimagesection_leftImage img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.Homeimagesection_leftImage img:hover {
+  transform: scale(1.1);
+}
+.Homeimagesection_rightImage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 60%;
+  height: 100%;
+  border-radius: 0.4rem;
+}
+.Homeimagesection_rightImage1 {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+.Homeimagesection_rightImage1 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.Homeimagesection_rightImage1 img:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .Homeimagesection_Container {
+    height: auto;
+    padding: 0 1rem;
+    flex-direction: column;
+  }
+  .Homeimagesection_leftImage {
+    width: 100%;
+    height: 30vh;
+
+  }
+
+  .Homeimagesection_leftImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .Homeimagesection_rightImage {
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+}

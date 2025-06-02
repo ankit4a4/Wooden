@@ -1,0 +1,49 @@
+.PrivacyPolicy_main_container {
+    width: 100%;
+    padding: 2% 3.5rem;
+  }
+  .PrivacyPolicy_main_container h3 {
+    font-size: 1.3vw;
+    color: var(--baseOrange);
+  }
+  .PrivacyPolicy_main_container h2 {
+    font-size: 1.3vw;
+    margin-top: 1%;
+  }
+  
+  .PrivacyPolicy_main_container h1 {
+    font-size: 1vw;
+    margin-top: 1%;
+    background-color: var(--liteGray);
+    padding: 1%;
+    border-radius: 0.3rem;
+  }
+  .PrivacyPolicy_main_container ol li {
+    font-size: 1.3vw;
+    margin-left: 1.4%;
+    margin-top: 1%;
+  }
+  .PrivacyPolicy_main_container p {
+    margin-top: 1%;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .PrivacyPolicy_main_container {
+      padding: 2% 1rem;
+    }
+    .PrivacyPolicy_main_container h3 {
+      font-size: 1.5vh;
+    }
+    .PrivacyPolicy_main_container h2 {
+      font-size: 1.5vh;
+    }
+  
+    .PrivacyPolicy_main_container h1 {
+      font-size: 1.2vh;
+      margin: 3% 0;
+    }
+    .PrivacyPolicy_main_container ol li {
+      font-size: 1.5vh;
+    }
+  }
+  

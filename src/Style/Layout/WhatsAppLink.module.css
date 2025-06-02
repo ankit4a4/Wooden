@@ -1,0 +1,32 @@
+.whatsapp_link {
+  position: fixed;
+  bottom: 6%;
+  right: 9%;
+  display: flex;
+  color: var(--baseWhite) !important;
+  align-items: center;
+  justify-content: center;
+  transform: translate(28%, 30%);
+  padding: 0.7vw 1.2vw;
+  z-index: 999;
+  border-radius: 1.5vw;
+  gap: 0.5vw;
+  background-color: var(--brightGreen);
+}
+.icon {
+  font-size: 2vw;
+}
+a {
+  text-decoration: none;
+}
+a span {
+  color: var(--baseWhite);
+}
+@media screen and (max-width: 768px) {
+  .whatsapp_link {
+    position: fixed;
+    bottom: 6%;
+    font-size: 3.3vw;
+    right: 16%;
+  }
+}

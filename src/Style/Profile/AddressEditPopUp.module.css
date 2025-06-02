@@ -1,0 +1,185 @@
+.AddressPopUp_container {
+  height: fit-content;
+  width: 45vw;
+  background-color: var(--liteOrange);
+  color: var(--baseWhite);
+  position: fixed;
+  padding: 1vw;
+  border-radius: 0.3vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.AddressForm {
+  display: flex;
+  margin-top: 3vw;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 0.3vw;
+  justify-content: start;
+  gap: 0.5vw;
+}
+
+.country_div,
+.Address_div,
+.Apartment_div,
+.Phone_div {
+  height: 3.5vw;
+  border: none;
+  border-radius: 0.3vw;
+  width: 100%;
+}
+
+.country_div input,
+.Address_div input,
+.Apartment_div input,
+.Phone_div input {
+  height: 100%;
+  width: 100%;
+  border: none;
+  border-radius: 0.3vw;
+  padding: 0 2%;
+  outline: none;
+}
+
+.name_grp_div,
+.City_grp_div {
+  height: 3.5vw;
+  width: 100%;
+  border-radius: 0.3vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+.name_grp_div input {
+  height: 100%;
+  width: 50%;
+  padding: 0 2%;
+  border-radius: 0.3vw;
+  outline: none;
+  border: none;
+}
+
+.City_grp_div input {
+  height: 100%;
+  width: 33%;
+  padding: 0 2%;
+  border-radius: 0.3vw;
+  outline: none;
+  border: none;
+}
+
+.saveBtn {
+  padding: 0.7vw 2.3vw;
+  margin-top: 0.5vw;
+  cursor: pointer;
+  border-radius: 0.3vw;
+  border: none;
+  color: #fff;
+  background-color: #1e5799;
+  transition: background-color 0.3s;
+}
+
+.saveBtn:hover {
+  background-color: #174e84;
+}
+
+.cross_icon {
+  position: absolute;
+  top: 1vw;
+  font-size: 2vw;
+  cursor: pointer;
+  color: #1e5799;
+  right: 1vw;
+  transition: color 0.3s;
+}
+
+.cross_icon:hover {
+  color: #174e84;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .AddressPopUp_container {
+    width: 60vw;
+    padding: 1.5vw;
+  }
+
+  .country_div,
+  .Address_div,
+  .Apartment_div,
+  .Phone_div,
+  .name_grp_div input,
+  .City_grp_div input {
+    height: 3vw;
+  }
+
+  .saveBtn {
+    padding: 0.6vw 2vw;
+    font-size: 0.9rem;
+  }
+
+  .cross_icon {
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .AddressPopUp_container {
+    width: 80vw;
+    padding: 2vw;
+  }
+
+  .country_div,
+  .Address_div,
+  .Apartment_div,
+  .Phone_div,
+  .name_grp_div input,
+  .City_grp_div input {
+    height: 2.8vw;
+  }
+
+  .name_grp_div, .City_grp_div{
+    height: 7vh;
+  }
+
+  .saveBtn {
+    padding: 0.5vw 1.8vw;
+    font-size: 0.8rem;
+  }
+
+  .cross_icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .AddressPopUp_container {
+    width: 90vw;
+    padding: 3vw;
+  }
+
+  .country_div,
+  .Address_div,
+  .Apartment_div,
+  .Phone_div,
+  .name_grp_div input,
+  .City_grp_div input {
+    height: 3rem;
+    /* padding: 0 0.8rem; */
+  }
+
+  .saveBtn {
+    padding: 0.4rem 1.5rem;
+    font-size: 0.7rem;
+  }
+
+  .cross_icon {
+    font-size: 1.2rem;
+  }
+}

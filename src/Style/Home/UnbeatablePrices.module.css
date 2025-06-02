@@ -1,0 +1,81 @@
+.UnbeatablePrices_container {
+  padding: 3% 3.5rem;
+  background-color: var(--litePink);
+  margin-top: 4%;
+}
+.UnbeatablePrices_container p {
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.UnbeatablePrices_allCards {
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.UnbeatablePrices_card {
+  width: 100%;
+  height: 60vh;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  position: relative;
+  cursor: pointer;
+}
+.UnbeatablePrices_innerDiv {
+  width: 100%;
+  height: 60%;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  flex-direction: column;
+  background-color: var(--baseOrange);
+  padding-bottom: 4%;
+}
+.UnbeatablePrices_btn {
+  padding: 0.5rem 1rem;
+  background-color: var(--baseWhite);
+  font-weight: bold;
+  font-size: 1.1vw;
+  color: var(--baseBlack);
+  border-radius: 0.3rem;
+  z-index: 2;
+}
+.UnbeatablePrices_innerDiv h4 {
+  margin-top: 8%;
+  font-size: 1.2vw;
+  color: var(--baseWhite);
+}
+
+.UnbeatablePrices_innerDiv img {
+  width: 90%;
+  height: 81%;
+  margin: 0 auto;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  border-radius: 10rem 10rem 0 0;
+}
+@media screen and (max-width: 768px) {
+  .UnbeatablePrices_container {
+    padding: 3% 1rem;
+    text-align: center;
+  }
+  .UnbeatablePrices_container p {
+    font-size: 1.7vh;
+  }
+  .UnbeatablePrices_allCards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .UnbeatablePrices_card {
+    height: 30vh;
+  }
+  .UnbeatablePrices_innerDiv h4 {
+    font-size: 1.4vh;
+  }
+}

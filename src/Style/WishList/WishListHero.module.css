@@ -1,0 +1,185 @@
+.WishLisht_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3.5rem;
+}
+
+.ProductHero_details_right {
+  width: 80%;
+  height: 100vh;
+}
+.WishLisht_leftData p {
+  font-size: 1vw;
+  color: var(--baseGray);
+  font-weight: 600;
+}
+
+.WishLisht_RightData {
+  display: flex;
+  justify-content: end;
+  gap: 1.5rem;
+}
+.WishLisht_RightData p {
+  font-size: 1.2vw;
+}
+.WishLisht_RightData span {
+  font-size: 1.6vw;
+}
+.WishLisht_RightData_icon {
+  transform: rotate(90deg);
+  margin-top: -3%;
+}
+.WishListHero_heading {
+  font-size: 1.5vw;
+  padding: 0 3.5rem;
+  margin-top: 2%;
+}
+.WishListHero_containers {
+  padding: 2% 3.5rem;
+  margin-top: 2%;
+  border-top: 0.14rem solid var(--liteGray);
+  width: 100%;
+}
+.WishListHero_AllCards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+.WishListHero_card {
+  width: 100%;
+  padding-bottom: 4%;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  position: relative;
+}
+.WishListHero_card img {
+  height: 45vh;
+  width: 100%;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.4s;
+}
+.WishListHero_card_Delete {
+  height: 45vh;
+  width: 100%;
+  position: absolute;
+  top: -100%;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.616);
+  transition: 0.2s;
+  display: flex;
+  padding: 2% 3%;
+  justify-content: end;
+  cursor: pointer;
+}
+.WishListHero_card_Delete span {
+  font-size: 2vw;
+  color: var(--baseWhite);
+  cursor: pointer;
+  height: 10%;
+  color: var(--baseRed);
+}
+.WishListHero_card:hover .WishListHero_card_Delete {
+  top: 0;
+}
+
+.WishListHero_card p {
+  font-size: 1.3vw;
+  margin-top: 2%;
+  color: var(--baseGray);
+  padding: 0 2%;
+}
+.WishListHero_card h3 {
+  font-size: 1.5vw;
+  color: var(--baseRed);
+  margin-top: 2%;
+  padding: 0 2%;
+}
+.WishListHero_card h3 span {
+  font-size: 1.4vw;
+}
+
+.WishListHero_card_empty_box {
+  height: 100vh;
+  display: flex;
+  width: 91vw;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.WishListHero_card_empty_box h2 {
+  font-size: 2vw;
+}
+
+.WishListHero_card_empty_box img {
+  height: 50vh;
+}
+.WishListHero_card_empty_box button {
+  padding: 0.6% 3%;
+  border-radius: 0.5rem;
+  background-color: var(--baseOrange);
+  color: white;
+  font-size: 1.3vw;
+  border: 2px solid var(--baseOrange);
+  cursor: pointer;
+  margin-top: 3%;
+}
+@media screen and (max-width: 768px) {
+  .WishListHero_containers {
+    padding: 2% 1rem;
+  }
+  .WishListHero_heading {
+    font-size: 2vh;
+  }
+  .WishListHero_AllCards {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+    width: 100%;
+  }
+  .WishListHero_card {
+    width: 100%;
+    padding-bottom: 4%;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    position: relative;
+  }
+  .WishListHero_card img {
+    height: 35vh;
+  }
+  .WishListHero_card_Delete {
+    height: 35vh;
+  }
+  .WishListHero_card_Delete span {
+    font-size: 2.2vh;
+  }
+  .WishListHero_card p {
+    font-size: 1.5vh;
+  }
+  .WishListHero_card h3 {
+    font-size: 2vh;
+  }
+  .WishListHero_card h3 span {
+    font-size: 1.5vh;
+  }
+
+  .WishListHero_card_empty_box {
+    height: 50vh;
+    width: 91vw;
+    gap: 1rem;
+  }
+  .WishListHero_card_empty_box h2 {
+    font-size: 2.3vh;
+  }
+
+  .WishListHero_card_empty_box img {
+    height: 20vh;
+  }
+  .WishListHero_card_empty_box button {
+    font-size: 1.6vh;
+    padding: 2% 5%;
+  }
+}

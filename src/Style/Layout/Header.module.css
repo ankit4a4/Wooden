@@ -1,0 +1,285 @@
+.header_topHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5% 3.5rem;
+  gap: 1rem;
+  background-color: var(--green);
+  color: var(--baseWhite);
+}
+
+.header_topHeading p {
+  font-size: 1.2vw;
+}
+
+/* For Webkit browsers (Chrome, Safari) */
+.dropdown::-webkit-scrollbar {
+  width: 0.2vw;
+}
+
+.dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dropdown::-webkit-scrollbar-thumb {
+  background-color: var(--liteGray);
+  border-radius: 0.5vw;
+}
+
+/* Optional: Hover effect for the thumb */
+.dropdown::-webkit-scrollbar-thumb:hover {
+  background-color: darken(var(--liteGray), 10%);
+}
+
+.dropdown li {
+  cursor: pointer;
+  border: 1px solid var(--liteGray);
+  width: 100%;
+  padding: 0.6vw 0.8vw;
+}
+
+.hoverDiv {
+  height: fit-content;
+  width: 14vw;
+  color: var(--baseBlack);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 0.5vw;
+  position: absolute;
+  background-color: var(--baseWhite);
+}
+
+.hoverDiv li {
+  height: 2vw;
+  color: var(--baseBlack);
+  border: 1px solid var(--liteGray);
+  width: 100%;
+  padding: 0.3vw 0.8vw;
+}
+
+.hoverDiv li:hover {
+  cursor: pointer;
+  color: var(--baseWhite);
+  background-color: var(--liteOrange);
+}
+
+.hoveredDivParent {
+  position: relative;
+  z-index: 1000;
+} 
+.Header_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5% 3.5rem;
+}
+
+.HeaderLogo {
+  width: 17%;
+}
+
+.HeaderLogo img {
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.HeaderSearch {
+  width: 65%;
+  position: relative;
+  display: flex;
+}
+
+.HeaderSearch input {
+  width: 92%;
+  color: var(--baseBlack);
+  padding: 2% 1.5rem;
+  border-radius: 0.3rem 0 0 0.3rem;
+  border: 0.2rem solid var(--LiteBlue);
+  font-size: 1vw;
+}
+
+.HeaderSearch_icon {
+  width: 8%;
+  border-radius: 0 0.3rem 0.3rem 0;
+  background-color: var(--liteOrange);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5vw;
+  border: 0.1rem solid var(--liteGray);
+  cursor: pointer;
+}
+.dropdown {
+  max-height: 20vw;
+  overflow-y: auto;
+  color: var(--baseBlack);
+  width: 17vw;
+  border-radius: 0.5vw;
+  position: absolute;
+  top: 100%;
+  background-color: var(--baseWhite);
+  scrollbar-width: thin;
+  scrollbar-color: var(--liteGray) transparent;
+
+}
+
+.HeaderRightLogo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 10%;
+  font-size: 1.7vw;
+  color: var(--baseBlack);
+}
+
+.HeaderRightLogo p {
+  cursor: pointer;
+}
+
+.header_bottom_container {
+  padding: 1.4% 9rem;
+  background-color: var(--litePink);
+  margin-bottom: 1%;
+}
+
+.header_bottom_container ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  list-style: none;
+  color: black;
+}
+
+.header_bottom_container ul li {
+  font-size: 1.2vw;
+  cursor: pointer;
+  font-weight: 600;
+  
+
+}
+
+@media screen and (max-width: 768px) {
+  .header_topHeading {
+    padding: 1.5% 1rem;
+    text-align: center;
+  }
+
+  .header_topHeading p {
+    font-size: 1.5vh;
+  }
+
+  .Header_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1% 1rem;
+  }
+
+  .HeaderLogo {
+    width: 40%;
+    height: 9vh;
+  }
+
+  .HeaderLogo img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .HeaderSearch {
+    width: 94%;
+    display: flex;
+    margin-left: 3%;
+    margin-bottom: 3%;
+  }
+
+  .HeaderSearch input {
+    width: 92%;
+    color: var(--baseBlack);
+    padding: 2% 1.5rem;
+    border-radius: 0.3rem 0 0 0.3rem;
+    border: 0.1rem solid var(--liteGray); 
+    font-size: 1.3vh;
+    border: 0.1rem solid var(--liteGray);
+    font-size: 3vw;
+  }
+
+  .HeaderSearch_icon {
+    width: 8%;
+    border-radius: 0 0.3rem 0.3rem 0;
+    background-color: var(--liteOrange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4.5vw;
+    border: 0.1rem solid var(--liteGray);
+    cursor: pointer;
+  }
+
+  .HeaderRightLogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    font-size: 3vh;
+    color: var(--baseBlack);
+  }
+  .dropdown {
+    max-height: 28vh !important;
+    font: 2vw;
+    width: 18vh;
+    overflow-y: auto;
+    border-radius: 0.5vw;
+    position: absolute;
+    top: 100%;
+  }
+  .dropdown li {
+    padding: 1vw 0.3vw;
+  }
+  .HeaderRightLogo p {
+    cursor: pointer;
+  }
+
+  /* category links */
+
+  .mobileResponsive_container {
+    padding: 1.4% 1rem;
+    position: absolute;
+    z-index: 20;
+    height: 100vh;
+    background-color: var(--baseWhite);
+    width: 100%;
+    top: 10%;
+  }
+
+  .mobileResponsive_container ul {
+    display: block;
+    gap: 1rem;
+  }
+
+  .mobileResponsive_container ul li {
+    font-size: 3vh;
+    cursor: pointer;
+    margin-top: 5%;
+    font-weight: 600;
+    list-style: none;
+  }
+
+  .mobile_bar {
+    font-size: 4vh;
+    cursor: pointer;
+  }
+
+  .header_bottom_container {
+    display: none;
+  }
+
+  .hoverDivParent {
+    display: none;
+  }
+  .HeaderSearch_icon {
+    font-size: 1.9vh;
+  }
+}

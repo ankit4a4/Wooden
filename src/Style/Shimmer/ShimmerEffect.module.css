@@ -1,0 +1,31 @@
+.shimmer_menu {
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  padding: 0 3.5rem;
+}
+.shimmer {
+  height: 100%;
+  width: 100%;
+  background-color: var(--liteGray);
+  border-radius: 0.4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 2%;
+}
+.innerBox {
+  height: 80%;
+  width: 90%;
+  box-shadow: 0 0 0.2rem var(--baseWhite);
+  border-radius: 0.5rem;
+}
+.text {
+  width: 40%;
+  height: 10%;
+  box-shadow: 0 0 0.2rem var(--baseWhite);
+  border-radius: 0.5rem;
+  margin-top: 5%;
+}

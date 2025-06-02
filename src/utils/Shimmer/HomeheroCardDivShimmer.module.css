@@ -1,0 +1,28 @@
+.divs_parent {
+  display: flex;
+  width: 100%;
+
+  align-items: center;
+  padding: 1vw;
+  justify-content: space-between;
+  gap: 1vw;
+}
+
+.divs_parent {
+  height: 35vh;
+  width: 33%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  border-radius: 0.5rem;
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+  justify-content: space-between;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0%;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

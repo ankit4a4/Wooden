@@ -1,0 +1,191 @@
+.HeroHome_Main_container {
+  height: auto;
+  width: 100%;
+  display: flex;
+  background-color: var(--baseWhite);
+  /* color: var(--baseBlack); */
+  align-items: center;
+  justify-content: space-between;
+  padding: 1% 3.5rem;
+}
+
+.LeftSaid_box,
+.RigthSaid_box {
+  width: 58%;
+  height: 70vh;
+  border-radius: 0.7rem;
+  background: url("../../assets//Home/HeroHomeLeftsaidImage.webp");
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.RigthSaid_box {
+  width: 40%;
+  background: url("../../assets//Home/HeroHomeRightSaidData.webp");
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+}
+.InnerDetailsBox {
+  height: 35%;
+  width: 18vw;
+  background-color: var(--liteGreen);
+  border-radius: 0 0 0.7rem 0rem;
+  border: 2px solid var(--baseOrange);
+  color: var(--baseWhite);
+  display: flex;
+  justify-content: center;
+  gap: 1.5vw;
+  flex-direction: column;
+  padding-bottom: 3%;
+}
+.InnerDetailsBox p {
+  font-size: 1.4vw;
+  color: var(--baseWhite);
+  padding-left: 7%;
+}
+
+.InnerDetailsBox button {
+  width: 40%;
+  height: 25%;
+  background-color: var(--baseOrange);
+  border-radius: 0.5rem;
+  color: var(--baseWhite);
+  border: none;
+  margin-left: 7%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.InnerDetailsBox_designBox {
+  clip-path: polygon(83% 0, 100% 46%, 81% 100%, 0 100%, 0 0);
+  height: 25%;
+  padding-left: 4%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+
+  background-color: var(--baseRed);
+}
+
+.HeroHomeCardDiv {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0 3.5rem;
+}
+.HeroHomeCard {
+  height: 60vh;
+  width: 100%;
+  border-radius: 0.5rem;
+  display: block;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.213);
+  margin-bottom: 2%;
+}
+.HeroCardImageBox {
+  width: 100%;
+  height: 60%;
+}
+.HeroCardImageBox img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.heroCardDetails {
+  display: flex;
+  justify-content: center;
+  gap: 1vw;
+  flex-direction: column;
+  width: 100%;
+  height: 40%;
+  padding-left: 1rem;
+}
+.heroCardDetails p {
+  font-size: 1.2vw;
+}
+.heroCardDetails p small {
+  font-weight: bold;
+  font-size: 1vw;
+  color: var(--baseOrange);
+}
+.heroCardDetails h5 {
+  font-size: 1.6vw;
+  font-weight: bold;
+  color: var(--green);
+}
+.heroCardDetails h6 {
+  font-size: 1.3vw;
+  font-weight: bold;
+  color: var(--baseRed);
+}
+.heroCardDetails button {
+  width: 40%;
+  height: 25%;
+  background-color: var(--baseOrange);
+  border-radius: 0.5rem;
+  color: var(--baseWhite);
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.InnerDetailsBox u {
+  color: var(--baseOrange) !important;
+}
+
+@media screen and (max-width: 768px) {
+  .HeroHome_Main_container {
+    flex-direction: column;
+    padding: 1% 1rem;
+    gap: 1rem;
+  }
+  .LeftSaid_box,
+  .RigthSaid_box {
+    width: 100%;
+    height: 50vh;
+  }
+  .InnerDetailsBox {
+    width: 50%;
+  }
+  .InnerDetailsBox p {
+    font-size: 1.4vh;
+    padding-left: 7%;
+  }
+  .InnerDetailsBox span {
+    color: var(--baseOrange);
+  }
+
+  .InnerDetailsBox button {
+    width: 60%;
+  }
+  .HeroHomeCardDiv {
+    margin-top: 4%;
+    padding: 0 1rem;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .HeroHomeCard {
+    height: 25vh;
+  }
+  .heroCardDetails p {
+    font-size: 1.4vh;
+  }
+  .heroCardDetails p small {
+    font-size: 1.2vh;
+  }
+  .heroCardDetails h5 {
+    font-size: 1.5vh;
+  }
+  .heroCardDetails h6 {
+    font-size: 1.5vh;
+  }
+  .heroCardDetails button {
+    font-size: 1.4vh;
+  }
+}

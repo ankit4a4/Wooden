@@ -1,0 +1,136 @@
+.HomeGalaryTopDesign {
+  display: flex;
+  align-items: center;
+  color: var(--baseBlack);
+  background-color: var(--baseWhite);
+
+  justify-content: space-between;
+  padding: 0 3.5rem;
+  margin-top: 3%;
+}
+
+.hoverBoxHomePage {
+  position: absolute;
+  left: 0;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.187);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease-in-out;
+  cursor: pointer;
+  border-radius: 0.3rem;
+  backdrop-filter: blur(0.5rem);
+  transition: 0.2s;
+}
+.HomeGalaryTopDesign_line {
+  width: 44%;
+  height: 0.2rem;
+  border-radius: 1rem;
+  background-color: var(--baseOrange);
+}
+.HomeGalaryTopDesign_center {
+  height: 7vh;
+  width: 7vh;
+  background-color: var(--green);
+  transform: rotate(45deg);
+}
+
+.galary_main_container {
+  padding: 2% 3.5rem;
+  text-align: center;
+}
+.galary_main_container h1 {
+  font-size: 2.8vw;
+}
+.galary_main_container h1 u {
+  color: var(--green);
+}
+.galary_main_container p {
+  font-size: 1.2vw;
+  margin-top: 1%;
+  color: var(--baseBlack);
+}
+
+.HomeGalary_allCardBox {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1rem;
+  margin-top: 3%;
+}
+.HomeGalaryCard {
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.HomeGalaryCard:hover .hoverBoxHomePage {
+  top: 0;
+}
+.HomeGalaryCard p {
+  margin-top: 3%;
+  font-size: 1.3vw;
+}
+.HomeGalaryCard img {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+  border-radius: 0.3rem;
+}
+.HomeGalaryCard img:hover {
+  transform: scale(1.1);
+}
+
+.galary_main_container button {
+  padding: 0.8rem 1.5rem;
+  background-color: var(--baseOrange);
+  font-size: 1.2vw;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 3%;
+  color: var(--baseWhite);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .HomeGalaryTopDesign {
+    padding: 0 1rem;
+  }
+  .HomeGalaryTopDesign_center {
+    height: 3vh;
+    width: 3vh;
+  }
+  .galary_main_container {
+    padding: 2% 1rem;
+  }
+  .galary_main_container h1 {
+    font-size: 2.8vh;
+    margin-top: 4%;
+  }
+
+  .galary_main_container p {
+    font-size: 1.4vh;
+    margin-top: 3%;
+  }
+  .HomeGalary_allCardBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .HomeGalaryCard {
+    height: 25vh;
+    width: 100%;
+  }
+  .HomeGalaryCard p {
+    margin-top: 3%;
+    font-size: 1.5vh;
+  }
+
+  .galary_main_container button {
+    font-size: 1.4vh;
+  }
+}

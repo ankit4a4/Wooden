@@ -1,0 +1,248 @@
+.card {
+  position: absolute;
+  top: 8%;
+  left: 68%;
+  display: flex;
+  height: 17vw;
+  color: var(--blue);
+  width: 30%;
+  font-size: 1.25vw;
+  font-weight: 600;
+  align-items: center;
+  padding: 1vw;
+  background-color: var(--liteGray);
+  border-radius: 0.7vw;
+  box-shadow: 0.2vw 0.2vw 1px 0px rgb(0 0 0 / 0.3),
+    0 4px 6px -4px rgb(0 0 0 / 0.7);
+}
+
+.globle_container {
+  position: relative;
+  width: 100%;
+  background-color: var(--blue);
+  padding: 1vw;
+  height: 20vw;
+  display: flex;
+  align-items: center;
+}
+
+.Profile_Card_Text {
+  position: relative;
+  width: fit-content;
+  color: var(--baseWhite);
+  width: 60%;
+
+  text-align: center;
+
+  font-size: 3.5vw;
+  font-weight: bold;
+  bottom: 6.5%;
+  left: 3.5%;
+}
+.ProfileNameInp {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.NameDivProfileCard,
+.EmailDivProfileCard,
+.MobileDivProfileCard,
+.PasswordDivProfileCard {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.5vw;
+}
+.profile_edit_button {
+  padding: 0.4vw 0.8vw;
+  font-size: 1vw;
+  cursor: pointer;
+  color: var(--baseWhite);
+  border: 2px solid var(--blue);
+  border-radius: 0.5vw;
+}
+.profile_edit_button:hover {
+  background-color: var(--blue);
+  color: var(--liteGray);
+}
+.profile_button {
+  padding: 0.4vw 0.8vw;
+  cursor: pointer;
+  color: var(--blue);
+  border: 2px solid var(--blue);
+  border-radius: 0.5vw;
+}
+.ProfileNameInp input::placeholder {
+  color: var(--blue);
+}
+.profile_button:hover {
+  background-color: var(--blue);
+  color: var(--liteGray);
+}
+
+.details {
+  margin-left: 1vw;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  gap: 1vw;
+}
+
+.inputName {
+  border: 2px solid var(--blue);
+  padding: 0.4vw;
+  border-radius: 0.25vw;
+  width: 9vw;
+  outline: none;
+}
+.inputName::placeholder {
+  font-size: 1vw;
+}
+.add_otp {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1vw;
+}
+.add_otp_inp {
+  width: 5vw;
+  height: 2vw;
+  padding: 0.4vw 0.8vw;
+}
+.ProfileNameInp span{
+  font-size: 1.3vw;
+}
+
+
+/* //////////////////////////// MOBILE RESPONSIVE ////////////////////////// */
+
+@media screen and (max-width: 768px) {
+  .card {
+    position: absolute;
+    top: 24%;
+    left: 20%;
+    display: flex;
+    height: 27vw;
+    color: var(--blue);
+    width: 60vw;
+    font-size: 1.25vw;
+    font-weight: 600;
+    align-items: center;
+    background-color: var(--liteGray);
+    border-radius: 0.7vw;
+    box-shadow: 0.2vw 0.2vw 1px 0px rgb(0 0 0 / 0.3),
+      0 4px 6px -4px rgb(0 0 0 / 0.7);
+  }
+  .details label,
+  .PasswordDivProfileCard p,
+  .MobileDivProfileCard p,
+  .EmailDivProfileCard p,
+  .ProfileNameInp p {
+    font-size: 1.3vh;
+  }
+  .globle_container {
+    position: relative;
+    width: 100vw;
+    text-align: center;
+    border-radius: 0.5vw;
+    background-color: var(--blue);
+    padding: 1vw;
+    height: 40vw;
+    margin-top: -3vw;
+    display: flex;
+    align-items: start;
+  }
+  .ProfileNameInp span{
+    font-size: 1.3vh;
+  }
+
+ 
+
+  .Profile_Card_Text {
+    position: relative;
+    color: var(--baseWhite);
+    width: 90%;
+    text-align: center;
+    font-size: 2.5vh;
+    bottom: 0;
+    padding-top: 2%;
+  }
+  .ProfileNameInp {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .ProfileNameInp {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .NameDivProfileCard,
+  .EmailDivProfileCard,
+  .MobileDivProfileCard,
+  .PasswordDivProfileCard {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 0.5vw;
+  }
+  .profile_edit_button {
+    padding: 0.4vw 0.8vw;
+    font-size: 1.3vh;
+  }
+  .profile_edit_button:hover {
+    background-color: var(--blue);
+    color: var(--liteGray);
+  }
+  .profile_button {
+    padding: 0.4vw 0.8vw;
+    cursor: pointer;
+    color: var(--blue);
+    border: 2px solid var(--blue);
+    border-radius: 0.5vw;
+  }
+  .ProfileNameInp input::placeholder {
+    color: var(--blue);
+  }
+  .profile_button:hover {
+    background-color: var(--blue);
+    color: var(--liteGray);
+  }
+
+  .details {
+    margin-left: 0vw;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    gap: 2vw;
+  }
+
+  .inputName {
+    border: 1px solid var(--blue);
+    width: 27vw;
+    outline: none;
+    padding: 0 1%;
+    border-radius: 0.1rem;
+  }
+  .inputName::placeholder {
+    font-size: 1.3vh;
+  }
+  .add_otp {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 1vw;
+  }
+  .add_otp_inp {
+    width: 5vw;
+    height: 2vw;
+    padding: 0.4vw 0.8vw;
+  }
+}

@@ -1,0 +1,179 @@
+.CustomerReviews_container {
+  padding: 0% 3.5rem;
+  color: var(--baseBlack);
+  background-color: var(--baseWhite);
+  margin: 2% 0;
+}
+.CustomerReviews_container p {
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+
+.CustomerReviews_CardsmainBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  margin-top: 2%;
+}
+.CustomerReviews_Card {
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 0.1rem solid var(--baseGray);
+  padding-bottom: 4%;
+  height: 16vh;
+  z-index: 1;
+  margin-top: 5%;
+  position: relative;
+  padding-top: 12%;
+}
+.CustomerReviews_text {
+  height: 9.5vh;
+  overflow-y: auto;
+}
+.CustomerReviews_text::-webkit-scrollbar {
+  display: none;
+}
+.CustomerReviews_Card::-webkit-scrollbar {
+  display: none;
+}
+.CustomerReviews_Card img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.CustomerReviews_Card img:hover {
+  transform: scaleX(1.1);
+}
+.CustomerReviews_Card p {
+  font-size: 1.2vw;
+  font-weight: bold;
+  text-align: center;
+  margin-left: 5%;
+  color: var(--baseGray);
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  justify-content: center;
+}
+.CustomerReviews_Card p span {
+  color: var(--green);
+  margin-top: 1%;
+  font-size: 1.5vw;
+}
+.CustomerReviews_Card p:last-child {
+  font-size: 1vw;
+  text-align: center;
+  margin-left: 5%;
+  padding-right: 5%;
+  color: var(--baseGray);
+}
+.CustomerReviews_stars {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--baseOrange);
+  font-size: 1.8vw;
+  background-color: var(--baseWhite);
+  border: 0.1rem solid var(--baseGray);
+  width: 80%;
+  gap: 0.5rem;
+  margin: 0 auto;
+  border-radius: 0.3rem;
+  padding: 4% 0;
+  z-index: 2;
+}
+.CustomerReviews_Line {
+  position: absolute;
+  top: -22%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.CustomerReviews_Line hr {
+  width: 10%;
+  border-radius: 0.5rem;
+}
+
+.CustomerReviews_btnBox {
+  width: 100%;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.CustomerReviews_btnBox button {
+  width: 15%;
+  padding: 1% 0;
+  border-radius: 0.3rem;
+  border: 2px solid var(--baseOrange);
+  cursor: pointer;
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: var(--baseWhite);
+  background-color: var(--baseOrange);
+}
+.Reviews_top_headers {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Reviews_top_headers p {
+  font-size: 1.5vw;
+  font-weight: bold;
+}
+.Reviews_top_headers button {
+  width: 12%;
+  padding: 0.5% 0;
+  border-radius: 0.3rem;
+  border: 2px solid var(--baseOrange);
+  cursor: pointer;
+  font-size: 1.2vw;
+  font-weight: bold;
+  color: var(--baseWhite);
+  background-color: var(--baseOrange);
+}
+
+@media screen and (max-width: 768px) {
+  .CustomerReviews_container {
+    padding: 0% 1rem;
+  }
+  .CustomerReviews_container p {
+    font-size: 1.7vh;
+  }
+
+  .CustomerReviews_CardsmainBox {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .CustomerReviews_Card {
+    height: 10vh;
+    z-index: 1;
+    margin-top: 10%;
+    position: relative;
+    padding-top: 12%;
+  }
+  .CustomerReviews_text {
+    height: 6.8vh;
+  }
+
+  .CustomerReviews_Card p {
+    font-size: 1.4vh;
+  }
+  .CustomerReviews_Card p span {
+    font-size: 1.7vh;
+  }
+  .CustomerReviews_Card p:last-child {
+    font-size: 1.2vh;
+  }
+  .CustomerReviews_stars {
+    font-size: 2vh;
+  }
+  .CustomerReviews_btnBox button {
+    width: 25%;
+    font-size: 1.4vh;
+  }
+  .Reviews_top_headers button {
+    font-size: 1.4vh;
+  }
+}

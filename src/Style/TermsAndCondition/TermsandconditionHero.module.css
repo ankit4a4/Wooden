@@ -1,0 +1,48 @@
+.TermsandconditionHero_main_container {
+  width: 100%;
+  padding: 2% 3.5rem;
+}
+.TermsandconditionHero_main_container h3 {
+  font-size: 1.3vw;
+  color: var(--baseOrange);
+}
+.TermsandconditionHero_main_container h2 {
+  font-size: 1.3vw;
+  margin-top: 1%;
+}
+
+.TermsandconditionHero_main_container h1 {
+  font-size: 1vw;
+  margin-top: 1%;
+  background-color: var(--liteGray);
+  padding: 1%;
+  border-radius: 0.3rem;
+}
+.TermsandconditionHero_main_container ol li {
+  font-size: 1.3vw;
+  margin-left: 1.4%;
+  margin-top: 1%;
+}
+.TermsandconditionHero_main_container p {
+  margin-top: 1%;
+}
+
+@media screen and (max-width: 768px) {
+  .TermsandconditionHero_main_container {
+    padding: 2% 1rem;
+  }
+  .TermsandconditionHero_main_container h3 {
+    font-size: 1.5vh;
+  }
+  .TermsandconditionHero_main_container h2 {
+    font-size: 1.5vh;
+  }
+
+  .TermsandconditionHero_main_container h1 {
+    font-size: 1.2vh;
+    margin: 3% 0;
+  }
+  .TermsandconditionHero_main_container ol li {
+    font-size: 1.5vh;
+  }
+}

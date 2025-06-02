@@ -1,0 +1,219 @@
+.OrderHistory_main_container {
+  padding: 2% 3.5rem;
+  width: 100%;
+}
+.OrderHistory_container {
+  width: 100%;
+}
+.OrderHistory_container p b {
+  font-size: 1.5vw;
+}
+.OrderHistory_container p {
+  font-size: 1.2vw;
+  margin-top: 1%;
+}
+
+.OrderHistory_emptyBox {
+  width: 100%;
+}
+.OrderHistory_emptyBox p b {
+  font-size: 1.5vw;
+}
+.OrderHistory_emptyBox p {
+  font-size: 1.2vw;
+  margin-top: 2%;
+}
+.OrderHistory_emptyBox_DetailsBox {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.OrderHistory_emptyBox_DetailsBox p {
+  font-size: 1.2vw;
+  color: var(--baseGray);
+}
+.OrderHistory_emptyBox_DetailsBox h3 {
+  font-size: 1.3vw;
+  color: var(--green);
+}
+.OrderHistory_emptyBox_DetailsBox img {
+  height: 50vh;
+  width: auto;
+  margin-top: 7%;
+  object-fit: contain;
+}
+
+/* product details box */
+
+.OrderHistory_ProductDetailsBox {
+  width: 100%;
+  border: 1px solid var(--liteGray);
+  border-radius: 0.5rem;
+  padding: 2%;
+  margin-top: 2%;
+}
+.orderHistory_orderDetails {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.orderHistory_orderDeliveryData {
+  display: flex;
+  flex-direction: column;
+}
+
+.orderHistory_orderDetails_logo {
+  height: 8vh;
+  width: 8vh;
+  border-radius: 50%;
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.orderHistory_orderDetails_logo span {
+  font-size: 2vw;
+  margin-top: 17%;
+  color: var(--baseWhite);
+}
+.orderHistory_orderDeliveryData p {
+  font-size: 1.6vw;
+  font-weight: bold;
+}
+.orderHistory_orderDeliveryData small {
+  font-size: 1.1vw;
+  color: var(--baseGray);
+}
+
+.orderHistory_orderDetails_productDetails {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  padding: 1% 2%;
+  border: 1px solid var(--liteGray);
+  margin-top: 2%;
+  border-radius: 0.5rem;
+}
+.orderHistory_orderDetails_productDetails_image {
+  display: flex;
+  gap: 1rem;
+}
+.orderHistory_orderDetails_productDetails_Image_img {
+  width: 7vw;
+  height: 7vw;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.orderHistory_orderDetails_productDetails_Image_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.orderHistory_orderDetails_productDetails_content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.orderHistory_orderDetails_productDetails_content h2 {
+  font-size: 1.7vw;
+  font-weight: 900;
+}
+.orderHistory_orderDetails_productDetails_content h3 {
+  font-size: 1.3vw;
+  font-weight: 600;
+}
+.orderHistory_orderDetails_productDetails_logo span {
+  font-size: 2vw;
+  margin-top: 3%;
+}
+.orderHistory_Pagination {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.5rem;
+}
+.orderHistory_Pagination p {
+  font-size: 1.3vw;
+}
+.orderHistory_Pagination span {
+  color: var(--green);
+  cursor: pointer;
+}
+.orderHistory_Pagination_icon {
+  position: relative;
+  top: 0.2rem;
+}
+
+/* ///////////////////// MOBILE RESPONSIVE ////////////////// */
+
+@media screen and (max-width: 768px) {
+  .OrderHistory_main_container {
+    padding: 2% 1rem;
+  }
+
+  .OrderHistory_container p b {
+    font-size: 1.7vh;
+  }
+  .OrderHistory_container p {
+    font-size: 1.5vh;
+  }
+
+  .OrderHistory_emptyBox p b {
+    font-size: 1.8vh;
+  }
+  .OrderHistory_emptyBox p {
+    font-size: 1.5vh;
+  }
+  .OrderHistory_emptyBox_DetailsBox p {
+    font-size: 1.5vh;
+  }
+  .OrderHistory_emptyBox_DetailsBox h3 {
+    font-size: 1vh;
+  }
+  .orderHistory_orderDetails_productDetails_content h3 {
+    font-size: 1.6vh;
+    font-weight: 600;
+  }
+  .OrderHistory_emptyBox_DetailsBox img {
+    height: 30vh;
+  }
+
+  /* product details box */
+
+  .orderHistory_orderDetails_logo {
+    height: 4vh;
+    width: 4vh;
+  }
+  .orderHistory_orderDetails_logo span {
+    font-size: 2.3vh;
+  }
+  .orderHistory_orderDeliveryData p {
+    font-size: 1.9vh;
+  }
+  .orderHistory_orderDeliveryData small {
+    font-size: 1.4vh;
+  }
+
+  .orderHistory_orderDetails_productDetails_Image_img {
+    width: 4vw;
+    height: 4vw;
+  }
+
+  .orderHistory_orderDetails_productDetails_content h2 {
+    font-size: 2vh;
+  }
+  .orderHistory_orderDetails_productDetails_content h3 {
+    font-weight: 600;
+  }
+  .orderHistory_orderDetails_productDetails_logo span {
+    font-size: 2.3vh;
+  }
+
+  .orderHistory_Pagination p {
+    font-size: 1.6vh;
+  }
+}

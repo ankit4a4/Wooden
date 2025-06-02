@@ -1,0 +1,139 @@
+.address_main_container {
+  width: 100%;
+  color: var(--baseBlack);
+  background-color: var(--baseWhite);
+  padding: 2% 3.5rem;
+}
+.address_container {
+  width: 100%;
+}
+.address_container p b {
+  font-size: 2vw;
+}
+.Address_details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  width: 100%;
+  margin-top: 4%;
+}
+.Current_address_box {
+  width: 100%;
+}
+.Current_address_box p {
+  font-size: 1.2vw;
+}
+.Current_address {
+  height: 30vh;
+  width: 100%;
+  margin-top: 1%;
+  border: 1px solid var(--liteGray);
+  border-radius: 0.5rem;
+  padding: 4%;
+  position: relative;
+}
+.Current_address {
+  font-size: 1.4vw;
+  font-weight: 500;
+}
+
+.Current_address_DeleteBtn,
+.Current_address_editBtn {
+  width: 7vh;
+  height: 7vh;
+  background-color: var(--baseOrange);
+  position: absolute;
+  right: 0;
+  border-radius: 0.3rem 0 0.3rem 0;
+  bottom: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Current_address_DeleteBtn span,
+.Current_address_editBtn span {
+  font-size: 2.5vw;
+  margin-top: 20%;
+  color: var(--baseWhite);
+}
+.Current_address_editBtn {
+  right: 9vh;
+  border-radius: 0.3rem 0.3rem 0 0;
+}
+
+.Current_address_box textarea {
+  height: 30vh;
+  width: 100%;
+  margin-top: 1%;
+  border: 1px solid var(--liteGray);
+  border-radius: 0.5rem;
+  padding: 2%;
+  position: relative;
+}
+.Current_address_box_button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 7%;
+}
+.Current_address_box_button button {
+  padding: 1% 8%;
+  border: 1px solid var(--liteGray);
+  cursor: pointer;
+  border-radius: 0.3rem;
+  background-color: transparent;
+  font-size: 1.1vw;
+}
+.Current_address_box_button button:hover {
+  border: 1px solid var(--baseOrange);
+  background-color: var(--baseOrange);
+  color: var(--baseWhite);
+}
+
+@media screen and (max-width: 768px) {
+  .address_main_container {
+    padding: 2% 1rem;
+  }
+  .address_container {
+    width: 100%;
+  }
+  .address_container p b {
+    font-size: 2.3vh;
+  }
+  .Address_details {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 1rem;
+  }
+
+  .Current_address_box p {
+    font-size: 1.5vh;
+  }
+  .Current_address {
+    height: 15vh;
+  }
+  .Current_address {
+    font-size: 1.7vh;
+  }
+
+  .Current_address_DeleteBtn,
+  .Current_address_editBtn {
+    width: 4vh;
+    height: 4vh;
+  }
+  .Current_address_DeleteBtn span,
+  .Current_address_editBtn span {
+    font-size: 2.8vh;
+  }
+  .Current_address_editBtn {
+    right: 5vh;
+  }
+
+  .Current_address_box textarea {
+    height: 15vh;
+  }
+  .Current_address_box_button button {
+    font-size: 1.4vh;
+  }
+}

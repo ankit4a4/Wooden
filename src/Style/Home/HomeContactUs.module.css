@@ -1,0 +1,213 @@
+.HomeContactUs_container {
+  display: flex;
+  padding: 3% 3.5rem;
+  color: var(--baseBlack);
+  background-color: var(--baseWhite);
+}
+.HomeContactUs_details_left {
+  width: 60%;
+  height: 60vh;
+  background-image: url("../../assets/Home/HomeContactaUsImage.webp");
+  background-size: 90% 100%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.NameFieldDiv {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1vw;
+}
+.error {
+  font-size: 0.6vw !important;
+  color: var(--baseRed) !important;
+}
+.HomeContactUs_cricle {
+  width: 12vh;
+  height: 23vh;
+  background-color: var(--litePink);
+  border-radius: 0 50vh 50vh 0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.HomeContactUs_details {
+  width: 45%;
+  height: auto;
+  background-color: var(--green);
+  color: var(--baseWhite);
+  border-radius: 0.3rem;
+  padding: 2% 5%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  bottom: 20%;
+  right: 8%;
+}
+.HomeContactUs_details h2 {
+  font-family: cursive;
+  font-size: 1.3vw;
+}
+.HomeContactUs_details button {
+  width: 100%;
+  padding: 2% 0;
+  border: none;
+  background-color: var(--baseOrange);
+  color: var(--baseWhite);
+  border-radius: 0.3rem;
+  font-family: cursive;
+  font-size: 1.5vw;
+}
+
+.HomeContactUs_details_right {
+  /* background: red; */
+  padding: 0 2vw;
+  width: 40%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 0.5rem;
+}
+.HomeContactUs_details_right form {
+  display: flex;
+  width: 100%;
+  align-items: start;
+  justify-content: start;
+  color: var(--yellowgreen);
+  gap: 1vw;
+  flex-direction: column;
+}
+.inpForm {
+  outline: none;
+  border: 0.2rem solid var(--LiteBlue);
+  color: var(--baseBlack);
+  width: 100%;
+  background-color: transparent;
+  padding: 1vw 1vw;
+  border-radius: 0.8vw;
+  color: var( --baseGray);
+}
+.inpFormText {
+  padding: 0.8vw 1vw;
+  outline: none;
+  height: 8vw;
+  border-radius: 0.8vw;
+  border: 0.2rem solid var(--LiteBlue);
+  color: var(--baseBlack);
+  width: 100%;
+  background-color: transparent;
+  padding: 0.8vw 1vw;
+
+}
+.btn {
+  padding: 0.8vw 2.3vw;
+  color: var(--baseWhite);
+  border-radius: 0.8vw;
+  border: 1px solid var(--liteGray);
+  background-color: var(--brightGreen);
+  cursor: pointer;
+}
+.HomeContactUs_details_right h4 {
+  margin-top: 2%;
+  font-size: 1.7vw;
+  margin-bottom: 3%;
+}
+.HomeContactUs_details_right p {
+  font-size: 1.6vw;
+  color: var(--green);
+}
+.HomeContactUs_details_right p:nth-child(1) {
+  font-weight: bold;
+}
+.HomeContactUs_details_box {
+  display: flex;
+  gap: 2rem;
+}
+.HomeContactUsVideoCall {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.HomeContactUsVideoCall,
+.HomeContactUsVideoCall_end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--baseWhite);
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1%;
+}
+.HomeContactUsVideoCall span,
+.HomeContactUsVideoCall_end span {
+  height: 10vh;
+  width: 10vh;
+  border-radius: 50%;
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.7vw;
+}
+.HomeContactUsVideoCall_end span {
+  background-color: var(--baseRed);
+  font-size: 2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .HomeContactUs_container {
+    padding: 3% 1rem;
+    flex-direction: column;
+  }
+  .HomeContactUs_details_left {
+    width: 100%;
+    height: 40vh;
+    margin-top: 4%;
+  }
+  .HomeContactUs_cricle {
+    width: 4.5vh;
+    height: 9vh;
+  }
+
+  .HomeContactUs_details h2 {
+    font-size: 1.5vh;
+  }
+  .HomeContactUs_details button {
+    font-size: 1.5vh;
+  }
+
+  .HomeContactUs_details_right {
+    width: 100%;
+    height: auto;
+  }
+  .HomeContactUs_details_right h4 {
+    font-size: 2vh;
+  }
+  .HomeContactUs_details_right p {
+    font-size: 2vh;
+    margin-top: 5%;
+  }
+
+  .HomeContactUsVideoCall span,
+  .HomeContactUsVideoCall_end span {
+    height: 5vh;
+    width: 5vh;
+    font-size: 2.7vh;
+  }
+  .HomeContactUsVideoCall_end span {
+    font-size: 2vh;
+  }
+  .NameFieldDiv {
+    margin-top: 0%;
+    gap: 1vh;
+  }
+  .HomeContactUs_details_right form input , .HomeContactUs_details_right form textarea {
+    margin-top: 2%;
+  }
+
+  .HomeContactUs_details_right form button{
+    margin-top: 2%;
+  }
+}

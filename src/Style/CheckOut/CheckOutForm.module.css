@@ -1,0 +1,369 @@
+.CheckOutForm_container {
+  padding: 2% 0;
+  width: 100%;
+}
+.CheckOutForm_header {
+  width: 100%;
+  padding: 1%;
+  text-align: center;
+  background-color: var(--green);
+}
+.CheckOutForm_header p {
+  color: var(--baseWhite);
+  font-size: 1.3vw;
+}
+.CheckOutForm_heading {
+  width: 100%;
+  padding: 1.5% 3.5rem;
+  border-bottom: 0.14rem solid var(--liteGray);
+}
+.CheckOutForm_heading h3 {
+  font-size: 1.4vw;
+  color: var(--baseBlack);
+}
+.CheckOutForm_details {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 1.5% 3.5rem;
+  width: 100%;
+}
+.CheckOutForm_formdetails {
+  width: 60%;
+}
+.CheckOutForm_formdetails form {
+  width: 100%;
+}
+.CheckOutForm_formdetails_flexBox {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 2%;
+}
+.CheckOutForm_formdetails_flexBox input {
+  width: 50%;
+  padding: 2%;
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--liteGray);
+  font-size: 1.2vw;
+}
+.CheckOutForm_formdetails_flexBox h2 {
+  font-size: 1.3vw;
+}
+.CheckOutForm_formdetails_flexBox p {
+  font-size: 1.2vw;
+  color: var(--blue);
+}
+.CheckOutForm_formdetails_singleInput {
+  margin-top: 2%;
+  position: relative;
+}
+.CheckOutForm_formdetails_singleInput input {
+  width: 100%;
+  padding: 2%;
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--liteGray);
+  font-size: 1.1vw;
+}
+
+.CheckOutForm_formdetails_singleInput select {
+  width: 100%;
+  padding: 2%;
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--liteGray);
+  font-size: 1.1vw;
+}
+.CheckOutForm_formdetails_tripleInput {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+.CheckOutForm_formdetails_tripleInput input {
+  width: 33%;
+  padding: 2%;
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--liteGray);
+  font-size: 1.1vw;
+}
+.CheckOutForm_formdetails_checkBox {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2%;
+}
+.CheckOutForm_formdetails_checkBox p {
+  font-size: 1vw;
+  color: var(--baseGray);
+}
+.CheckOutForm_formdetails_radio {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2%;
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--liteGray);
+  font-size: 1.1vw;
+}
+.CheckOutForm_formdetails_radio p {
+  font-size: 1.3vw;
+  color: var(--baseGray);
+}
+
+.CheckOutForm_PROductDetails {
+  width: 39%;
+  margin-top: 3%;
+}
+.CheckOutForm_PROduct {
+  width: 100%;
+  display: flex;
+  margin-top: 2%;
+  gap: 1rem;
+  margin-bottom: 5%;
+}
+.CheckOutForm_PROduct_img {
+  height: 18vh;
+  width: 18vh;
+  overflow: hidden;
+  border-radius: 0.4rem;
+}
+.CheckOutForm_PROduct_img img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: 0.5s;
+}
+.CheckOutForm_PROduct_img img:hover {
+  transform: scale(1.1);
+}
+.CheckOutForm_PROduct_Title {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.CheckOutForm_PROduct_Title p {
+  font-size: 1.3vw;
+  /* color: var(--baseGray); */
+}
+.CheckOutForm_PROduct_Title small {
+  font-size: 1.1vw;
+  color: var(--baseGray);
+}
+
+.CheckOutForm_PROduct_price {
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.CheckOutForm_PROduct_price p {
+  font-size: 1.2vw;
+  color: var(--baseGray);
+}
+.CheckOutForm_PROduct_price p u {
+  font-size: 1.3vw;
+  color: var(--baseBlack);
+}
+.CheckOutForm_formdetails_singleInput button {
+  font-size: 1vw;
+  padding: 1% 3%;
+  font-weight: 700;
+  background-color: var(--baseOrange);
+  color: var(--baseWhite);
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--baseOrange);
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  top: 15%;
+}
+.CheckOutForm_formdetails_flexBox3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 1rem;
+  margin-top: 4%;
+}
+.CheckOutForm_formdetails_flexBox3 p {
+  font-size: 1.3vw;
+}
+
+.CheckOutForm_formdetails_flexBox3 p span {
+  color: var(--baseGray);
+}
+.CheckOutForm_formdetails_flexBox3 button {
+  margin-top: 5%;
+  width: 100%;
+  padding: 2% 0;
+  font-weight: bold;
+  border: 0.1rem solid var(--baseOrange);
+  background-color: var(--baseWhite);
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-size: 1.2vw;
+}
+.CheckOutForm_formdetails_flexBox3 button:hover {
+  background-color: var(--baseOrange);
+  color: var(--baseWhite);
+  border: 0.1rem solid var(--baseOrange);
+}
+.CheckOutForm_selectAddress_btn {
+  width: 60%;
+  gap: 1rem;
+  margin-top: 3%;
+}
+.CheckOutForm_selectAddress_btn button {
+  width: 30%;
+  padding: 1% 0;
+  font-weight: bold;
+  border: 0.1rem solid var(--baseOrange);
+  background-color: var(--baseWhite);
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-size: 1.2vw;
+}
+.checkout_btn{
+  width: 30%;
+  padding: 1% 0;
+  font-weight: bold;
+  border: 0.1rem solid var(--baseOrange);
+  background-color: var(--baseWhite);
+  cursor: pointer;
+  border-radius: 0.2rem;
+  font-size: 1.2vw;
+}
+.CheckOutForm_selectAddress_btn button:nth-child(2) {
+  margin-left: 1rem;
+}
+.CheckOutForm_selectAddress_btn button:hover {
+  background-color: var(--baseOrange);
+  color: var(--baseWhite);
+  border: 0.1rem solid var(--baseOrange);
+}
+.checkout_check_inputCheckBox{
+  font-size: 1.2vw;
+  color: var(--blue);
+  width: auto;
+  gap: 1rem;
+  margin-top: 3%;
+  width: 50%;
+  background-color: rgba(128, 128, 128, 0.254);
+  border-radius: 0.5rem;
+  padding: 1.3%;
+  margin-bottom: 2%;
+  border: 2px solid rgba(128, 128, 128, 0.254);
+}
+.checkout_check_inputCheckBox input{
+  padding: 2%;
+  border-radius: 0.4rem;
+  border: 0.1rem solid var(--liteGray);
+  font-size: 1.1vw;
+  cursor: pointer;
+}
+
+.checkOut_inputRadioBtn{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+@media screen and (max-width: 768px) {
+  .CheckOutForm_header p {
+    font-size: 1.6vh;
+  }
+  .CheckOutForm_heading {
+    padding: 1.5% 1rem;
+  }
+  .CheckOutForm_heading h3 {
+    font-size: 1.7vh;
+  }
+  .CheckOutForm_details {
+    display: block;
+    padding: 1.5% 1rem;
+  }
+  .CheckOutForm_formdetails {
+    width: 100%;
+  }
+  .CheckOutForm_formdetails form {
+    width: 100%;
+  }
+  .CheckOutForm_formdetails_flexBox input {
+    font-size: 1.5vh;
+  }
+  .CheckOutForm_formdetails_flexBox h2 {
+    font-size: 1.6vh;
+  }
+  .CheckOutForm_formdetails_flexBox p {
+    font-size: 1.5vh;
+  }
+  .CheckOutForm_formdetails_singleInput input {
+    font-size: 1.4vh;
+  }
+  .CheckOutForm_formdetails_singleInput select {
+    font-size: 1.4vh;
+  }
+  .CheckOutForm_formdetails_tripleInput input {
+    font-size: 1.4vh;
+  }
+  .CheckOutForm_formdetails_checkBox p {
+    font-size: 1.3vh;
+  }
+  .CheckOutForm_formdetails_radio {
+    font-size: 1.4vh;
+  }
+  .CheckOutForm_formdetails_radio p {
+    font-size: 1.6vh;
+  }
+  .CheckOutForm_PROductDetails {
+    width: 100%;
+  }
+  .CheckOutForm_PROduct_img {
+    height: 10vh;
+    width: 10vh;
+  }
+  .CheckOutForm_PROduct_Title p {
+    font-size: 1.6vh;
+  }
+  .CheckOutForm_PROduct_Title small {
+    font-size: 1.4vh;
+  }
+  .CheckOutForm_PROduct_price p {
+    font-size: 1.5vh;
+  }
+  .CheckOutForm_PROduct_price p u {
+    font-size: 1.6vh;
+  }
+  .CheckOutForm_formdetails_singleInput button {
+    font-size: 1.3vh;
+  }
+  .CheckOutForm_formdetails_flexBox3 p {
+    font-size: 1.6vh;
+  }
+  .CheckOutForm_formdetails_flexBox3 button {
+    font-size: 1.5vh;
+  }
+  .CheckOutForm_selectAddress_btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .CheckOutForm_selectAddress_btn button {
+    width: 50%;
+    font-size: 1.5vh;
+  }
+  .CheckOutForm_selectAddress_btn button:nth-child(2) {
+    margin-left: 0rem;
+  }
+}

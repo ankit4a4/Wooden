@@ -1,0 +1,81 @@
+.historyTabs {
+  display: flex;
+  width: 100%;
+  margin-top: 1.5vw;
+  color: var(--baseBlack);
+  background-color: #f3f3f3;
+  height: 4vw;
+  border-radius: 0.5vw;
+  margin-bottom: 0.5vw;
+}
+
+.tab {
+  width: 50%;
+  height: 100%;
+  background-color: #f3f3f3;
+  border: none;
+  cursor: pointer;
+  color: #1e5799;
+  font-size: 1.3vw;
+  border-radius: 0;
+}
+
+.active {
+  background-color: #1e5799;
+  color: white;
+}
+.SelectedPage {
+  height: 100vh;
+  width: 100%;
+  background: rgb(230, 99, 99);
+}
+.SelectedPage1 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(83, 182, 83);
+}
+.historyTabs button{
+  font-size: 1.2vw;
+}
+
+@media screen and (max-width: 768px) {
+  .historyTabs {
+    display: flex;
+    width: 100%;
+    margin-top: 1.5vw;
+    background-color: #f3f3f3;
+    height: 8vw;
+    border-radius: 0.5vw;
+    margin-bottom: 0.5vw;
+  }
+  .historyTabs button{
+    font-size: 1.5vh;
+  } 
+
+  .tab {
+    /* padding: 0.8vw 1.3vw; */
+    width: 50%;
+    height: 100%;
+    background-color: #f3f3f3;
+    border: none;
+    cursor: pointer;
+    color: #1e5799;
+    font-size: 1.3vw;
+    border-radius: 0.5vw;
+  }
+
+  .active {
+    background-color: #1e5799;
+    color: white;
+  }
+  .SelectedPage {
+    height: 100vh;
+    width: 100%;
+    background: rgb(230, 99, 99);
+  }
+  .SelectedPage1 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(83, 182, 83);
+  }
+}

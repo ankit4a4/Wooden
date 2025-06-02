@@ -1,0 +1,97 @@
+.shimmerLoader {
+  height: 50vh;
+  display: grid;
+  padding: 2vw;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1vw;
+}
+
+.shimmerCard {
+  background-color: #f0f0f0;
+  border-radius: 0.4vw;
+  padding: 1.6vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmerImage {
+  width: 100%;
+  height: 150px;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.shimmerTitle,
+.shimmerPrice {
+  height: 1vw;
+  margin-top: 0.5vw;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.shimmerTitle {
+  width: 60%;
+}
+
+.shimmerPrice {
+  width: 40%;
+}
+.mattress_container {
+  height: 70vh;
+  width: 100%;
+  padding: 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1vw;
+}
+.mattress_container_img {
+  width: 60%;
+  height: 90%;
+  border: none;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+.mattress_container_content {
+  width: 37%;
+  height: 90%;
+  border: none;
+  display: flex;
+  padding-top: 3vw;
+  gap: 2vw;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+.mattress_container_content_1 {
+  height: 4vw;
+  width: 90%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+.mattress_container_content_2 {
+  height: 2vw;
+  width: 70%;
+  background: linear-gradient(90deg, #f0f0f0 25%, #e0e0e0 50%, #f0f0f0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 2s infinite;
+}
+
+/* Shimmer animation */
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}

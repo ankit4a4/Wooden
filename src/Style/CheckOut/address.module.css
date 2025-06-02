@@ -1,0 +1,154 @@
+/* Popup container */
+.popupOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popupContent {
+  background-color: var(--baseWhite);
+  padding: 20px;
+  width: 80%;
+  max-width: 900px;
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+}
+
+.closePopupButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--baseRed);
+  color: var(--baseWhite);
+  border: none;
+  padding: 0.8%;
+  cursor: pointer;
+  border-radius: 0;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+
+.openPopupButton {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: var(--baseWhite);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+/* Address Cards Grid */
+.addressContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.address_card {
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  padding: 20px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.address_card:hover {
+  background-color: #eaeaea;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.selected {
+  border: 2px solid #007bff;
+  background-color: #e3f2fd;
+}
+
+.left_field {
+  margin-right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.right_field {
+  flex: 1;
+}
+
+.right_field p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+input[type="radio"] {
+  transform: scale(1.5);
+  margin-right: 10px;
+}
+
+.selectAddressButton {
+  background-color: var(--baseOrange);
+  margin-top: 2%;
+  padding: 0.5% 4%;
+  border-radius: 0.5rem;
+  border: 2px solid var(--baseOrange);
+  color: var(--baseWhite);
+  font-weight: 600;
+  font-size: 1.3vw;
+  cursor: pointer;
+}
+
+/* Responsive Grid for Smaller Screens */
+
+@media screen and (max-width: 768px) {
+  .popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .selectAddressButton {
+    font-size: 1.6vh;
+    padding: 1.5% 5%;
+    font-weight: 500;
+  }
+
+  .popupContent {
+    background-color: var(--baseWhite);
+    width: 96%;
+    max-height: 60vh;
+    overflow-y: auto;
+    position: relative;
+  }
+
+  .closePopupButton {
+    position: absolute;
+    top: 1%;
+    right: 1%;
+  }
+
+  .right_field p {
+    font-size: 1.5vh;
+  }
+
+  .address_card {
+    width: calc(100% - 20px);
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+}

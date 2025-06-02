@@ -1,0 +1,154 @@
+.WoodenBazaar_Container {
+  padding: 0 3.5rem;
+  background-color: var(--baseWhite);
+
+  color: var(--baseBlack);
+  margin-top: 5%;
+}
+.WoodenBazaar_Heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1%;
+}
+.WoodenBazaar_Heading h3 {
+  font-size: 2vw;
+}
+.WoodenBazaar_Heading p {
+  font-size: 1.3vw;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.WoodenBazaar_allCards {
+  margin-top: 4%;
+  width: 100%;
+}
+.WoodenBazaar_allCards2 {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.WoodenBazaar_card {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 0.1rem var(--baseGray);
+  position: relative;
+}
+.WoodenBazaar_card img {
+  height: 35vh;
+  width: 100%;
+  object-fit: contain;
+}
+
+.WoodenBazaar_card h3 {
+  padding: 0 3%;
+  font-size: 1.1vw;
+  color: var(--baseGray);
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  margin: 2% 0;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.WoodenBazaar_card button {
+  padding: 4% 8%;
+  border: none;
+  background-color: var(--baseOrange);
+  color: var(--baseWhite);
+  cursor: pointer;
+  border-radius: 0.3rem;
+  margin-left: 3%;
+  margin-top: 5%;
+  margin-bottom: 4%;
+  font-size: 1.2vw;
+}
+
+.WoodenBazaarTopDesign {
+  background-color: var(--baseRed);
+  color: var(--baseWhite);
+  padding: 2% 9%;
+  position: absolute;
+  clip-path: polygon(85% 0, 100% 48%, 86% 100%, 0 100%, 0 0);
+  top: 2%;
+  left: 0;
+}
+.WoodenBazaarTopDesign p {
+  font-size: 1.2vw;
+}
+.WoodenBazaar_price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.WoodenBazaar_price h3 {
+  font-size: 1.2vw;
+  color: var(--baseRed);
+  margin-top: 3%;
+}
+.WoodenBazaar_price h3:nth-child(2) {
+  font-size: 1.2vw;
+  color: var(--baseBlack);
+}
+
+@media screen and (max-width: 1200px) {
+  .WoodenBazaar_Container {
+    padding: 0 1rem;
+  }
+  .WoodenBazaar_Heading {
+    display: block;
+    text-align: center;
+  }
+  .WoodenBazaar_Heading h3 {
+    font-size: 2vh;
+  }
+  .WoodenBazaar_Heading p {
+    font-size: 1.5vh;
+    margin-top: 0%;
+    margin-bottom: 4%;
+  }
+  .WoodenBazaar_allCards2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+
+  .WoodenBazaar_card img {
+    height: 30vh;
+  }
+  .WoodenBazaar_card h3 {
+    font-size: 1.3vh;
+  }
+
+  .WoodenBazaar_card button {
+    font-size: 1.2vh;
+  }
+
+  .WoodenBazaarTopDesign {
+    background-color: var(--baseRed);
+    color: var(--baseWhite);
+    padding: 2% 9%;
+    position: absolute;
+    clip-path: polygon(85% 0, 100% 48%, 86% 100%, 0 100%, 0 0);
+    top: 2%;
+    left: 0;
+  }
+  .WoodenBazaarTopDesign p {
+    font-size: 1.2vw;
+  }
+
+  .WoodenBazaarTopDesign p {
+    font-size: 1.2vh;
+  }
+  .WoodenBazaar_price h3 {
+    font-size: 1.4vh;
+  }
+  .WoodenBazaar_price h3:nth-child(2) {
+    font-size: 1.4vh;
+  }
+}

@@ -1,0 +1,237 @@
+.OurJourney_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3% 3.5rem;
+  width: 100%;
+  gap: 1rem;
+  height: 70vh;
+}
+.OurJourney_leftData {
+  width: 90%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.OurJourney_leftData h3 {
+  font-size: 2vw;
+}
+.OurJourney_leftData p {
+  font-size: 1.5vw;
+  color: var(--baseGray);
+}
+.OurJourney_leftData button {
+  width: 20%;
+  padding: 2% 0;
+  border: none;
+  border-radius: 0.4rem;
+  background-color: var(--baseOrange);
+  font-size: 1.2vw;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+.OurJourneyRightData {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  padding-left: 3%;
+  position: relative;
+}
+.OurJourneyRightData h3 {
+  font-size: 1.4vw;
+}
+
+.OurJourneyRightData_innerBox {
+  width: 100%;
+  height: 90%;
+  border-radius: 0.4rem;
+  box-shadow: 0 0 0.4rem var(--baseGray);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  /* background: url("../../assets//AboutUs//OurJourneyImage.png"); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.OurJourneyRightData_innerBox_box {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: end;
+  padding: 10% 3%;
+}
+.OurJourneyRightData_innerBox_box p {
+  font-size: 1.3vw;
+  text-align: start;
+}
+.OurJourneyRightData_innerBox_box2 {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  align-items: start;
+  padding: 10% 3%;
+}
+.OurJourneyRightData_innerBox_box2 p {
+  font-size: 1.3vw;
+  text-align: start;
+}
+.OurJourneyDesign_main_Container {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.OurJourneyDesign_gola {
+  height: 9vh;
+  width: 9vh;
+  background-color: var(--baseOrange);
+  border-radius: 50%;
+  color: white;
+  font-size: 1.3vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  z-index: 2;
+}
+.OurJourneyDesign_line {
+  width: 100%;
+  height: 0.1rem;
+  background-color: var(--liteGray);
+  position: absolute;
+  z-index: 1;
+}
+/* commitment design */
+
+.commitment_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3% 3.5rem;
+  width: 100%;
+  gap: 1rem;
+}
+.commitment_box {
+  width: 30%;
+  height: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.1rem 0.1rem var(--baseGray);
+  background-color: var(--litePink);
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+}
+.commitment_box h3 {
+  font-size: 1.3vw;
+}
+.commitment_box p {
+  font-size: 1.2vw;
+  color: var(--baseGray);
+}
+
+@media screen and (max-width: 768px) {
+  .OurJourney_container {
+    padding: 3% 1rem;
+    height: auto;
+    flex-direction: column;
+  }
+  .OurJourney_leftData {
+    width: 100%;
+  }
+
+  .OurJourney_leftData h3 {
+    font-size: 1.8vh;
+    text-align: center;
+  }
+  .OurJourney_leftData p {
+    font-size: 1.5vh;
+  }
+  .OurJourney_leftData button {
+    font-size: 1.3vh;
+  }
+  .OurJourneyRightData {
+    width: 100%;
+    padding-left: 0%;
+  }
+  .OurJourneyRightData h3 {
+    font-size: 1.6vh;
+  }
+
+  .OurJourneyRightData_innerBox {
+    background-repeat: no-repeat;
+    flex-direction: column;
+    padding: 2% 0;
+    padding-left: 20%;
+    padding-right: 1%;
+    margin-top: 2%;
+  }
+  .OurJourneyRightData_innerBox_box {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 0% 0%;
+    margin-top: 3%;
+  }
+  .OurJourneyRightData_innerBox_box p {
+    font-size: 1.5vh;
+    text-align: start;
+  }
+  .OurJourneyRightData_innerBox_box2 {
+    width: 100%;
+    height: auto;
+    padding: 0% 0%;
+  }
+  .OurJourneyRightData_innerBox_box2 p {
+    font-size: 1.6vh;
+    text-align: start;
+  }
+  .OurJourneyDesign_main_Container {
+    width: auto;
+    top: 15%;
+    left: 5%;
+    height: 80%;
+    max-width: auto 0;
+    flex-direction: column;
+  }
+  .OurJourneyDesign_gola {
+    height: 4vh;
+    width: 4vh;
+    font-size: 1.2vh;
+  }
+  .OurJourneyDesign_line {
+    width: 0.1rem;
+    height: 100%;
+    background-color: var(--liteGray);
+    position: absolute;
+    z-index: 1;
+  }
+  /* commitment design */
+
+  .commitment_container {
+    padding: 2% 1rem;
+    flex-direction: column;
+    margin-bottom: 5%;
+  }
+  .commitment_box {
+    padding: 5% 2%;
+    width: 100%;
+  }
+  .commitment_box h3 {
+    font-size: 1.5vh;
+  }
+  .commitment_box p {
+    margin-top: 2%;
+    font-size: 1.4vh;
+    color: var(--baseGray);
+  }
+}

@@ -1,0 +1,181 @@
+.addReviewPopup_main_container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.849);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.addReviewPopup_container {
+  width: 60%;
+  min-height: 60%;
+  padding: 2%;
+  border-radius: 0.5rem;
+  background-color: var(--baseWhite);
+  position: relative;
+}
+
+.addReviewPopup_selected_items {
+  padding: 2%;
+  width: 70%;
+  height: 30vh;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  overflow-y: auto;
+}
+
+.addReviewPopup_itemBox {
+  width: 100%;
+  height: 15vh;
+  object-fit: contain;
+  box-shadow: 0 0 0.2rem var(--baseGray);
+  border-radius: 0.3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.addReviewPopup_itemBox span {
+  position: absolute;
+  color: var(--baseRed);
+  z-index: 2;
+  font-size: 1.7vw;
+  right: 2%;
+  top: 2%;
+  cursor: pointer;
+}
+
+.addReviewPopup_selected_items::-webkit-scrollbar {
+  display: none;
+}
+
+.starability_slot {
+  position: relative;
+  width: 150px;
+  height: 30px;
+  background-image: url("data:image/png;base64,...");
+  font-size: 0.1em;
+  color: transparent;
+}
+
+.starability_slot:after {
+  content: " ";
+  position: absolute;
+  left: 0;
+  height: 30px;
+  background-image: url("data:image/png;base64,...");
+  background-position: 0 -30px;
+}
+
+/* Additional styles for star ratings */
+.starability_slot[data-rating="5"]::after {
+  width: 150px;
+}
+
+.starability_slot[data-rating="4"]::after {
+  width: 120px;
+}
+
+.starability_slot[data-rating="3"]::after {
+  width: 90px;
+}
+
+.starability_slot[data-rating="2"]::after {
+  width: 60px;
+}
+
+.starability_slot[data-rating="1"]::after {
+  width: 30px;
+}
+
+/* Media query for high-resolution displays */
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  screen and (min-resolution: 192dpi) {
+  .starability_slot {
+    background-image: url("data:image/png;base64,...");
+    background-size: 30px auto;
+  }
+  .starability_slot:after {
+    background-image: url("data:image/png;base64,...");
+    background-size: 30px auto;
+  }
+}
+
+/* Additional starability styles */
+.starability_slot {
+  display: block;
+  position: relative;
+  width: 150px;
+  min-height: 5vh;
+  overflow: hidden;
+  margin-top: 2%;
+}
+
+.starability_slot legend {
+  font-size: 2.5vh;
+  color: var(--primaryTextColor);
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+
+.starability_slot > input {
+  position: absolute;
+  margin-right: -100%;
+  opacity: 0;
+}
+
+.starability_slot > input:checked ~ label,
+.starability_slot > input:focus ~ label {
+  background-position: 0 0;
+}
+
+.starability_slot > input:checked + label,
+.starability_slot > input:focus + label {
+  background-position: 0 -30px;
+}
+
+.starability_slot > input[disabled]:hover + label {
+  cursor: default;
+}
+
+.starability_slot > input:not([disabled]):hover ~ label {
+  background-position: 0 0;
+}
+
+.starability_slot > input:not([disabled]):hover + label {
+  background-position: 0 -30px;
+}
+
+.starability_slot > input:focus + label {
+  outline: 1px dotted #999;
+}
+
+.starability_slot .starability-focus-ring {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  outline: 2px dotted #999;
+  pointer-events: none;
+  opacity: 0;
+}
+
+.starability_slot > label {
+  position: relative;
+  display: inline-block;
+  /* float: left; */
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background-image: url("data:image/png;base64,...");
+  background-repeat: no-repeat;
+  background-position: 0 -30px;
+}

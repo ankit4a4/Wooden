@@ -1,0 +1,96 @@
+.cardBody {
+    display: flex;
+    flex-direction: column;
+    height: 48vh;
+    cursor: pointer;
+    gap: 0.4rem;
+}
+
+.cardImage {
+    height: 37vh;
+    overflow: hidden;
+}
+
+.cardImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+.variant{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.2rem 0 0 0;
+}
+
+.variant p{
+    display: flex;
+    align-items: center;
+}
+
+.cardTextDetails {
+    font-size: 2.2vh;
+    font-weight: 500;
+    color: var(--baseGray);
+}
+
+.cardTextDetails h3 {
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+
+}
+
+.cardTextPrice {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cardTextPrice p:nth-child(1) {
+    color: var(--baseRed);
+    font-weight: bold;
+    font-size: 2.5vh;
+    display: flex;
+    align-items: center;
+
+}
+
+.cardTextPrice p:nth-child(2) {
+    color: var(--baseBlack);
+    font-weight: bold;
+   
+}
+
+.cardTextImage {
+    height: 3vw;
+    width: 3vw;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.cardTextImage img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+@media screen and (max-width: 768px){
+    .cardBody {
+        height: 22vh;
+    }
+
+    .cardTextDetails {
+        font-size: 1.3vh;
+    }
+
+    .cardTextImage {
+        height: 7vw;
+        width: 7vw;
+    }
+.cardTextPrice p:nth-child(1) {
+    font-size: 1.4vh;
+}
+}

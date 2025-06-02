@@ -1,0 +1,17 @@
+:root {
+  --baseWhite: #ffffff;
+  --baseOrange: #ee980c;
+  --liteOrange: rgba(238, 152, 12, 0.5);
+  --liteGreen: rgba(51, 82, 48, 0.8);
+  --baseRed: #d12e13;
+  --litePink: rgba(238, 152, 12, 0.2);
+  --green: #335230;
+  --baseBlack: #252525;
+  --blue: #1e5799;
+  --brightGreen: rgb(0, 128, 0);
+  --LiteBlue: rgba(51, 82, 48, 0.2);
+  --baseGray: rgba(37, 37, 37, 0.8);
+  --liteGray: #f3f3f3;
+  --yellowgreen: rgb(154, 205, 50);
+  --baseGrayLight: rgba(95, 92, 92, 0.8);
+}

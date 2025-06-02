@@ -1,0 +1,49 @@
+.orderStatus {
+  /* margin-top: 30px; */
+  width: 30vw;
+  position: relative;
+  top: 0%;
+  right: 0%;
+}
+
+.subheading {
+  color: #1e5799;
+  font-weight: 600;
+  font-size: 1.5vw;
+  text-align: center;
+}
+
+.title {
+  font-size: 4vw;
+  width: 100%;
+  text-align: center;
+  color: #1e5799;
+}
+
+.tabs {
+  display: flex;
+
+  justify-content: space-between;
+  margin-top: 0.5vw;
+}
+
+.tab {
+  font-size: 1rem;
+  cursor: pointer;
+  color: #1e5799;
+}
+
+.progress {
+  width: 100%;
+  background-color: #e0e0e0;
+  height: 0.8vw;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.progressBar {
+  width: 50%;
+  height: 100%;
+  background-color: #1e5799;
+  border-radius: 10px;
+}

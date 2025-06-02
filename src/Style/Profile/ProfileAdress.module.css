@@ -1,0 +1,96 @@
+.SelectedPage {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  padding: 1vw;
+}
+.icons_div {
+  cursor: pointer;
+  position: absolute;
+  /* bottom: 1vw; */
+  top: 0;
+  height: 100%;
+  display: flex;
+  padding: 1.5vw 0;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  right: 1vw;
+  font-size: 1.7vw;
+}
+.pagination {
+  height: 2vw;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  justify-content: center;
+}
+.pagination button {
+  height: 2vw;
+  width: 6vw;
+  border: none;
+  border-radius: 0.5vw;
+  background-color: var(--blue);
+  color: var(--baseWhite);
+  cursor: pointer;
+}
+.update_icon {
+  color: var(--blue);
+}
+.delete_allAddress {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.delete_icon {
+  cursor: pointer;
+  color: var(--baseRed);
+  /* position: absolute;
+  top: 1vw;
+  right: 1vw; */
+  /* font-size: 1.5vw; */
+}
+.dataDiv_allAddress {
+  display: flex;
+  background-color: var(--liteGray);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  justify-content: start;
+  position: relative;
+  align-items: start;
+  padding: 1vw;
+  gap: 0.3vw;
+}
+.delete_allAddress {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .SelectedPage {
+    height: 100%;
+  }
+  .SelectedPage h1 {
+    font-size: 2.3vh;
+    margin-top: 2%;
+  }
+  .icons_div {
+    font-size: 2vh;
+  }
+  .pagination {
+    height: auto;
+  }
+  .pagination button {
+    height: auto;
+    width: auto;
+    margin-top: 2%;
+    padding: 2%;
+  }
+  .dataDiv_allAddress {
+    margin-top: 2%;
+  }
+  .dataDiv_allAddress p {
+    font-size: 1.8vh;
+  }
+}

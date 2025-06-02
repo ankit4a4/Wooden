@@ -1,0 +1,73 @@
+.main_container {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.387);
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  z-index: 15;
+}
+
+.LoginBlack {
+  width: 75%;
+  height: 100%;
+  background-color: black;
+}
+.container {
+  width: 25%;
+  height: 100%;
+  background-color: var(--baseWhite);
+}
+
+.LoginDetails_header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1% 4%;
+  background-color: var(--green);
+}
+.LoginDetails_header h2 {
+  font-size: 1.3vw;
+  color: var(--baseWhite);
+}
+.LoginDetails_header p {
+  font-size: 1.8vw;
+  color: var(--baseWhite);
+  cursor: pointer;
+}
+
+.changePass_form {
+  padding: 2% 3%;
+}
+.changePass_form input {
+  width: 100%;
+  padding: 4% 2%;
+  margin-top: 4%;
+  border: 0.1rem solid var(--baseGray);
+  border-radius: 0.3rem;
+}
+.changePass_form button {
+  width: 30%;
+  padding: 2% 3%;
+  margin-top: 4%;
+  border: 0.1rem solid var(--baseOrange);
+  border-radius: 0.3rem;
+  background-color: var(--baseOrange);
+  color: var(--baseWhite);
+  font-weight: bold;
+  font-size: 1.3vw;
+  cursor: pointer;
+}
+.inputBox {
+  width: 100%;
+  position: relative;
+}
+.inputBox span {
+  font-size: 1.5vw;
+  position: absolute;
+  top: 45%;
+  right: 2%;
+  cursor: pointer;
+}

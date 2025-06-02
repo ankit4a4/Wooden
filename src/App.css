@@ -1,0 +1,5 @@
+@import url("./constants/colorConstans.css");
+textarea {
+  resize: none;
+}
+

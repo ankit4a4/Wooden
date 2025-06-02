@@ -1,0 +1,71 @@
+.search_main_container {
+  width: 100%;
+  padding: 2% 3.5rem;
+  height: 100%;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.search_main_container button {
+  padding: 0.6% 3%;
+  border-radius: 0.5rem;
+  background-color: var(--baseOrange);
+  color: white;
+  font-size: 1.3vw;
+  border: none;
+  cursor: pointer;
+}
+.search_AllCard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+.search_card {
+  height: 100%;
+  width: 100%;
+  border-radius: 0.5rem;
+}
+.search_card img {
+  height: 45vh;
+  width: 28vw;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+.search_card h2 {
+  margin-left: 2%;
+  font-size: 1.5vw;
+  color: var(--baseBlack);
+  margin-top: 2%;
+}
+.search_card span {
+  color: var(--baseRed);
+  font-size: 1.3vw;
+  margin-left: 2%;
+}
+
+@media screen and (max-width: 768px) {
+  .search_main_container {
+    padding: 2% 1rem;
+  }
+  .search_main_container button {
+    font-size: 1.6vh;
+    border: 2px solid var(--baseOrange);
+  }
+  .search_AllCard {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .search_card img {
+    height: 30vh;
+    width: 100%;
+  }
+  .search_card h2 {
+    font-size: 1.8vh;
+  }
+  .search_card span {
+    font-size: 1.6vh;
+  }
+}

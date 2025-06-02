@@ -1,0 +1,214 @@
+.ReturnPopUp_container {
+  height: fit-content;
+  width: 45vw;
+  color: var(--baseBlack);
+  min-height: 55vh;
+  background-color: var(--baseWhite);
+  color: var(--baseBlack);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  position: absolute;
+  padding: 1vw;
+  z-index: 2;
+  border-radius: 0.3vw;
+  overflow: hidden;
+}
+
+.ReasonBox {
+  display: flex;
+  margin-top: 2vw;
+  height: 8vw;
+  flex-direction: column;
+}
+
+.ReasonBox textarea {
+  height: 70%;
+  padding: 0.5vw;
+  overflow: auto;
+}
+
+.backgroundDiv {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.crossbtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: var(--baseBlack);
+  font-weight: 900;
+  cursor: pointer;
+  background-color: var(--baseOrange);
+  color: var(--baseWhite);
+}
+
+.ReturnPopUp_image_section {
+  width: 100%;
+  margin-top: 1vw;
+}
+
+.ReturnPopUp_image_upload {
+  display: flex;
+  width: 20%;
+  cursor: pointer;
+  height: 6vw;
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  margin-bottom: 1vw;
+}
+
+.UploadTxt {
+  position: absolute;
+  left: 2vw;
+  display: flex;
+  flex-direction: column;
+  top: 1vw;
+}
+
+.UploadTxt span {
+  font-size: 0.8vw;
+}
+
+.imagesIcon {
+  font-size: 3vw;
+  color: var(--baseOrange);
+}
+
+.ReturnPopUp_image_upload label {
+  font-size: 1.2vw;
+  margin-bottom: 0.5vw;
+}
+
+button {
+  padding: 0.5vw 0.9vw;
+  color: var(--baseWhite);
+  border: none;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  margin: 0.2vw 0;
+  background-color: var(--blue);
+}
+
+.ReturnPopUp_image_upload input {
+  cursor: pointer;
+  color: #fff;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.ReturnPopUp_image_display {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1vw;
+  margin-bottom: 1vw;
+  overflow-y: auto;
+  height: 20vh;
+  overflow: hidden;
+}
+
+.ReturnPopUp_image_display img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0.3vw;
+  object-fit: cover;
+  box-shadow: 0 0 0.2rem #fff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .ReturnPopUp_container {
+    width: 60vw;
+    padding: 1.5vw;
+  }
+
+  .ReasonBox {
+    height: auto;
+  }
+
+  .ReturnPopUp_image_upload {
+    width: 30%;
+    height: 8vw;
+  }
+
+  .UploadTxt span {
+    font-size: 0.9rem;
+  }
+
+  .imagesIcon {
+    font-size: 2.5vw;
+  }
+
+  .ReturnPopUp_image_display {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.8vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .ReturnPopUp_container {
+    width: 80vw;
+    padding: 2vw;
+  }
+
+  .ReasonBox {
+    margin-top: 1.5vw;
+  }
+
+  .ReturnPopUp_image_upload {
+    width: 40%;
+    height: 10vw;
+  }
+
+  .UploadTxt span {
+    font-size: 0.8rem;
+  }
+
+  .imagesIcon {
+    font-size: 2rem;
+  }
+
+  .ReturnPopUp_image_display {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5vw;
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .ReturnPopUp_container {
+    width: 90vw;
+    padding: 3vw;
+  }
+
+  .ReasonBox {
+    margin-top: 1vw;
+  }
+
+  .ReturnPopUp_image_upload {
+    width: 50%;
+    height: 12vw;
+  }
+
+  .UploadTxt span {
+    font-size: 0.7rem;
+  }
+
+  .imagesIcon {
+    font-size: 1.5rem;
+  }
+
+  .ReturnPopUp_image_display {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.4vw;
+    overflow-y: auto;
+  }
+}

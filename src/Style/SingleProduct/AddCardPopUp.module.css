@@ -1,0 +1,305 @@
+.AddCardPopUp_main_conatainer {
+  background-color: rgba(0, 0, 0, 0.723);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  z-index: 5;
+}
+.AddCardPopUp_blankBox {
+  width: 75%;
+  height: 100%;
+}
+.AddCardPopUp_details {
+  width: 25%;
+  height: 100%;
+  background-color: white;
+  overflow-y: auto;
+  padding-bottom: 3%;
+}
+.AddCardPopUp_details::-webkit-scrollbar {
+  display: none;
+}
+.AddCardPopUp_details h2 {
+  font-size: 1.5vw;
+  padding: 2% 2%;
+  background: var(--green);
+  color: var(--baseWhite);
+}
+.AddCardPopUp_details p {
+  text-align: end;
+  padding: 0 4%;
+  font-size: 1.3vw;
+  margin-top: 5%;
+  color: var(--baseGray);
+}
+
+.AddCardPopUp_LeftData {
+  width: 25%;
+  height: 10vh;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  margin-top: 4%;
+}
+.AddCardPopUp_LeftData img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.SingleProductHero_right_quantity {
+  display: flex;
+  align-items: center;
+  margin-top: 5%;
+  justify-content: space-between;
+  width: 38%;
+  border: 0.1rem solid var(--liteGray);
+  font-size: 1.3vw;
+  padding: 0 2%;
+  border-radius: 0.4rem;
+}
+
+.SingleProductHero_right_quantity button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5vw;
+  cursor: pointer;
+  width: 30%;
+  color: var(--baseBlack);
+}
+
+.AddCardPopUp_design {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2%;
+  width: 100%;
+  margin-top: 7%;
+}
+.AddCardPopUp_design p {
+  text-align: start;
+  margin-top: 2%;
+}
+.AddCardPopUp_HeaderDetails {
+  margin-top: 2%;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+/* AddCardPopUp_RightData */
+
+.AddCardPopUp_RightData {
+  width: 70%;
+}
+.AddCardPopUp_HeaderDetails {
+  display: flex;
+  justify-content: space-between;
+}
+.AddCardPopUp_HeaderDetails p {
+  color: var(--baseBlack);
+  font-size: 1.2vw;
+}
+.AddCardPopUp_HeaderDetails span {
+  font-size: 1.8vw;
+  cursor: pointer;
+}
+.AddCardPopUp_MiddleDetails p small {
+  color: var(--baseGray);
+  font-size: 1vw;
+}
+.AddCardPopUp_MiddleDetails p {
+  color: var(--baseGray);
+  font-size: 1.2vw;
+}
+.AddCardPopUp_MiddleDetails {
+  display: block;
+}
+
+.SingleProductHero_right_subtotal {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+}
+
+.SingleProductHero_right_subtotal p {
+  font-size: 1.4vw;
+  color: var(--baseGray);
+}
+.SingleProductHero_right_subtotal h4 {
+  font-size: 1.2vw;
+  color: var(--baseRed);
+}
+.SingleProductHero_right_subtotal h4 span {
+  font-size: 1vw;
+}
+.AddCardPopUp_subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: baseline;
+  padding: 3% 2% 0 2%;
+  margin-top: 5%;
+  border-top: 0.14rem solid var(--liteGray);
+}
+.AddCardPopUp_subtotal p {
+  font-size: 1.3vw;
+}
+.AddCardPopUp_subtotal h4 {
+  color: var(--baseRed);
+  font-size: 1.3vw;
+  margin-top: 5%;
+}
+.AddCardPopUp_subtotal h4 span {
+  font-size: 1vw;
+}
+
+.AddCardPopUp_subtotal2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: baseline;
+  padding: 0% 2% 0 2%;
+}
+.AddCardPopUp_subtotal2 p {
+  font-size: 1.3vw;
+}
+.AddCardPopUp_subtotal2 h4 {
+  color: var(--baseRed);
+  font-size: 1.3vw;
+  margin-top: 5%;
+}
+.AddCardPopUp_subtotal2 h4 span {
+  font-size: 1vw;
+}
+.AddCardPopUp_btn {
+  width: 100%;
+  padding: 0 3%;
+}
+.AddCardPopUp_btn button {
+  margin-top: 5%;
+  width: 100%;
+  padding: 3% 0;
+  background-color: var(--baseWhite);
+  border: 0.1rem solid var(--baseOrange);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.AddCardPopUp_btn button:hover {
+  background-color: var(--baseOrange);
+  color: var(--baseWhite);
+}
+
+.AddCardPopUp_emptyCart {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+  height: 85vh;
+}
+.AddCardPopUp_emptyCart h1 {
+  margin-top: 1%;
+  font-size: 2.2vw;
+}
+.AddCardPopUp_emptyCart button {
+  background-color: var(--baseOrange);
+  color: var(--baseWhite);
+  border-radius: 0.3rem;
+  border: 0.1rem solid var(--baseOrange);
+  cursor: pointer;
+  font-size: 1.2vw;
+  padding: 2% 4%;
+  margin-top: 3%;
+}
+
+/* mobile responsive Style */
+
+@media screen and (max-width: 768px) {
+  .AddCardPopUp_blankBox {
+    width: 10%;
+  }
+  .AddCardPopUp_details {
+    width: 90%;
+  }
+
+  .AddCardPopUp_details h2 {
+    font-size: 1.7vh;
+  }
+  .AddCardPopUp_details p {
+    font-size: 1.5vh;
+  }
+
+  .AddCardPopUp_LeftData {
+    width: 35%;
+    height: 8vh;
+  }
+
+  .SingleProductHero_right_quantity {
+    font-size: 1.5vh;
+  }
+
+  .SingleProductHero_right_quantity button {
+    font-size: 1.7vh;
+  }
+
+  .AddCardPopUp_RightData {
+    width: 65%;
+  }
+
+  .AddCardPopUp_HeaderDetails p {
+    color: var(--baseBlack);
+    font-size: 1.5vh;
+  }
+  .AddCardPopUp_HeaderDetails span {
+    font-size: 2.1vh;
+  }
+  .AddCardPopUp_MiddleDetails p small {
+    font-size: 1.3vh;
+  }
+  .AddCardPopUp_MiddleDetails p {
+    font-size: 1.5vh;
+  }
+
+  .SingleProductHero_right_subtotal p {
+    font-size: 1.7vh;
+  }
+  .SingleProductHero_right_subtotal h4 {
+    font-size: 1.5vh;
+  }
+  .SingleProductHero_right_subtotal h4 span {
+    font-size: 1.3vh;
+  }
+
+  .AddCardPopUp_subtotal p {
+    font-size: 1.6vh;
+  }
+  .AddCardPopUp_subtotal h4 {
+    font-size: 1.6vh;
+  }
+  .AddCardPopUp_subtotal h4 span {
+    font-size: 1.6vh;
+  }
+
+  .AddCardPopUp_subtotal2 p {
+    font-size: 1.6vh;
+  }
+  .AddCardPopUp_subtotal2 h4 {
+    font-size: 1.6vh;
+  }
+  .AddCardPopUp_subtotal2 h4 span {
+    font-size: 1.3vh;
+  }
+  .AddCardPopUp_emptyCart {
+    height: 85vh;
+  }
+  .AddCardPopUp_emptyCart h1 {
+    margin-top: 1%;
+    font-size: 2.5vh;
+  }
+  .AddCardPopUp_emptyCart button {
+    font-size: 1.4vh;
+  }
+}

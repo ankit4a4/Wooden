@@ -1,0 +1,153 @@
+.SelectedPage1 {
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  background-color: var(--baseWhite);
+  color: var(--baseBlack);
+  flex-direction: column;
+  gap: 1vw;
+  padding: 1vw;
+  position: relative;
+}
+
+.pagination {
+  height: 2vw;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.crossbtn {
+  position: absolute;
+  top: 1vw;
+  cursor: pointer;
+  right: 1vw;
+}
+
+.pagination button {
+  height: 2vw;
+  width: 6vw;
+  border: none;
+  border-radius: 0.5vw;
+  background-color: var(--blue);
+  color: var(--baseWhite);
+  cursor: pointer;
+}
+
+.dataDiv_allAddress {
+  display: flex;
+  background-color: var(--liteGray);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  flex-direction: column;
+  justify-content: start;
+  position: relative;
+  position: relative;
+  border-radius: 0.5vw;
+  align-items: start;
+  padding: 1vw;
+  gap: 0.3vw;
+}
+
+.dataDiv_allAddress p span {
+  font-weight: 600;
+}
+
+.historyViewButton {
+  position: absolute;
+  right: 2%;
+  top: 4%;
+  padding: 0.7% 1.4%;
+  background-color: var(--blue);
+  color: var(--baseWhite);
+  border-radius: 0.5vw;
+  cursor: pointer;
+  border: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.historyUpperBtn {
+  position: absolute;
+  right: 2%;
+  border: none;
+  border-radius: 0.5vw;
+  cursor: pointer;
+  top: 35%;
+  padding: 0.7% 1.2%;
+
+  background-color: var(--blue);
+  color: var(--baseWhite);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.historyLowerBtn {
+  position: absolute;
+  padding: 0.7% 2.3%;
+
+  border: none;
+  cursor: pointer;
+  background-color: var(--blue);
+  color: var(--baseWhite);
+  border-radius: 0.5vw;
+  right: 2%;
+  bottom: 4%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .pagination {
+    height: auto;
+  }
+
+  .dataDiv_allAddress p {
+    font-size: 1.7vh;
+  }
+
+  .pagination button {
+    height: auto;
+    width: auto;
+    font-size: 1.5vh;
+  }
+
+  .dataDiv_allAddress {
+    margin-top: 2%;
+    padding: 2%;
+  }
+
+  .dataDiv_allAddress p span {
+    font-weight: 600;
+  }
+
+  .historyViewButton {
+    padding: 1.2%;
+    font-size: 1.4vh;
+    top: 10%;
+  }
+
+  .historyUpperBtn {
+    font-size: 1.4vh;
+    padding: 1.2% 0.9%;
+  }
+
+  .historyLowerBtn {
+    font-size: 1.4vh;
+    padding: 1% 4.4%;
+    bottom: 20%;
+  }
+
+  .SelectedPage1 h1 {
+    font-size: 2vh;
+    margin-top: 3%;
+  }
+}

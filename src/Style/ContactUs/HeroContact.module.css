@@ -1,0 +1,163 @@
+.HeroContact_container {
+  width: 100%;
+  padding: 2% 3.5rem;
+}
+.HeroContact_header {
+  width: 100%;
+  height: 30vh;
+  background: url("../../assets/ContactUs/contactTopImage.png");
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 0.5rem;
+}
+.error {
+  font-size: 0.6vw !important;
+  color: red !important;
+}
+.HeroContact_container h2 {
+  font-size: 1.5vw;
+  color: var(--baseOrange);
+  margin-top: 3%;
+}
+.HeroContact_container p {
+  font-size: 1.3vw;
+  margin-top: 1%;
+}
+.HeroContact_ContactFromMainBox {
+  margin-top: 5%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.HeroContact_ContactFromMainBox_left {
+  width: 40%;
+}
+.HeroContact_ContactFromMainBox_right {
+  width: 50%;
+}
+.HeroContact_innerBox {
+  width: 90%;
+  padding: 5% 5%;
+  background-color: var(--litePink);
+  border-radius: 0.5rem;
+  margin-bottom: 4%;
+}
+
+.HeroContact_innerBox h2 {
+  font-size: 1.4vw;
+}
+.HeroContact_innerBox p {
+  font-size: 1.3vw;
+  color: var(--baseGray);
+}
+
+.HeroContact_ContactFromMainBox_right h3 {
+  color: var(--baseOrange);
+  font-size: 1.3vw;
+}
+.HeroContact_ContactFromMainBox_right h2 {
+  font-size: 1.4vw;
+  color: var(--baseBlack);
+  margin-top: 1%;
+}
+
+.HeroContact_ContactFromMainBox_right form input {
+  width: 100%;
+  padding: 2% 3%;
+  margin-top: 3%;
+  border-radius: 0.4rem;
+  border: 0.2rem solid var(--LiteBlue);
+  color: var(--baseBlack);
+
+}
+.HeroContact_ContactFromMainBox_right form textarea {
+  width: 100%;
+  padding: 1% 3%;
+  margin-top: 3%;
+  border-radius: 0.4rem;
+  border: 0.2rem solid var(--LiteBlue);
+  height: 12vh;
+  color: var(--baseBlack);
+
+}
+.HeroContact_ContactFromMainBox_right form {
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+}
+.HeroContact_ContactFromMainBox_right form button {
+  margin-top: 3%;
+  background-color: var(--baseOrange);
+  color: var(--baseWhite);
+  border: none;
+  padding: 2% 3%;
+  border-radius: 0.4rem;
+  cursor: pointer;
+}
+.contactFlexBox_form {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .HeroContact_container {
+    width: 100%;
+    padding: 2% 1rem;
+  }
+  .HeroContact_header {
+    width: 100%;
+    height: 10vh;
+  }
+  .HeroContact_container h2 {
+    font-size: 1.7vh;
+    margin-top: 3%;
+  }
+  .HeroContact_container p {
+    font-size: 1.5vh;
+  }
+  .HeroContact_ContactFromMainBox {
+    flex-direction: column;
+  }
+  .HeroContact_ContactFromMainBox_left {
+    width: 100%;
+  }
+  .HeroContact_ContactFromMainBox_right {
+    width: 100%;
+  }
+  .HeroContact_innerBox {
+    width: 100%;
+    padding: 5% 5%;
+    background-color: var(--litePink);
+    border-radius: 0.5rem;
+    margin-bottom: 4%;
+  }
+  .HeroContact_innerBox h2 {
+    font-size: 1.4vw;
+  }
+  .HeroContact_innerBox p {
+    font-size: 1.5vh;
+    color: var(--baseGray);
+  }
+  .HeroContact_ContactFromMainBox_right h3 {
+    font-size: 1.5vh;
+  }
+  .HeroContact_ContactFromMainBox_right h2 {
+    font-size: 1.6vh;
+  }
+  .HeroContact_ContactFromMainBox_right form {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+  }
+  .HeroContact_ContactFromMainBox_right form button {
+    margin-top: 3%;
+    background-color: var(--baseOrange);
+    color: var(--baseWhite);
+    border: none;
+    padding: 2% 3%;
+    border-radius: 0.4rem;
+    cursor: pointer;
+  }
+}

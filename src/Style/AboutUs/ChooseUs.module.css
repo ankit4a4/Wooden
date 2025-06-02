@@ -1,0 +1,103 @@
+.choosUsContainer {
+  display: flex;
+  gap: 1rem;
+  padding: 2% 3.5rem;
+  height: 75vh;
+  width: 100%;
+}
+.choosUsContainer_leftData {
+  width: 60%;
+  height: 100%;
+  border-radius: 0.5rem;
+  background: url("../../assets/AboutUs/AboutchoseUsimage.webp");
+  background-size: 100% 85%;
+  background-repeat: no-repeat;
+  padding: 0 5%;
+  display: flex;
+  align-items: end;
+}
+
+.choosUsContainer_leftData_details {
+  width: 70%;
+  /* height: 75%; */
+  font-size: 1.2vw;
+  color: var(--baseBlack);
+  padding: 4% 5%;
+  background-color: var(--baseWhite);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 0.5rem var(--baseGray);
+}
+.choosUsContainer_leftData_details button {
+  margin-top: 5%;
+  padding: 3% 6%;
+  border-radius: 0.4rem;
+  color: var(--baseWhite);
+  background-color: var(--baseOrange);
+  font-size: 1.2vw;
+  font-weight: 600;
+  border: none;
+}
+
+.choosUsContainer_RightData {
+  width: 40%;
+  height: 85%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.choosUsContainer_RightData {
+  font-size: 1.2vw;
+}
+.choosUsContainer_RightData_box {
+  padding: 2% 5%;
+  width: 100%;
+  height: auto;
+  background-color: var(--litePink);
+  border-radius: 0.5rem;
+}
+.choosUsContainer_RightData_box h3 {
+  font-size: 1.4vw;
+  font-weight: 600;
+}
+.choosUsContainer_RightData_box p {
+  margin-top: 2%;
+  color: var(--baseGray);
+  font-size: 1.4vw;
+}
+
+@media screen and (max-width: 768px) {
+  .choosUsContainer {
+    padding: 2% 1rem;
+    height: 50vh;
+    flex-direction: column;
+  }
+  .choosUsContainer_leftData {
+    width: 100%;
+  }
+
+  .choosUsContainer_leftData_details {
+    width: 100%;
+    font-size: 1.2vh;
+  }
+  .choosUsContainer_leftData_details button {
+    font-size: 1.2vh;
+  }
+
+  .choosUsContainer_RightData {
+    text-align: center;
+    width: 100%;
+  }
+  .choosUsContainer_RightData {
+    font-size: 1.4vh;
+    padding: 5% 3%;
+  }
+  .choosUsContainer_RightData_box h3 {
+    font-size: 1.6vh;
+  }
+  .choosUsContainer_RightData_box p {
+    font-size: 1.5vh;
+  }
+  .choosUsContainer_RightData_box {
+    margin-top: 2%;
+  }
+}

@@ -1,0 +1,299 @@
+.Cabinets_Main_container {
+  padding: 3% 3.5rem 0 3.5rem;
+  color: var(--baseBlack);
+  background-color: var(--litePink);
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.Cabinets_heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
+.Cabinets_heading h2 {
+  font-size: 2vw;
+}
+
+.Cabinets_heading p {
+  font-size: 1.3vw;
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.details_card {
+  height: 5vw;
+  /* padding: 0.4vw 0.7vw; */
+}
+
+.details_card h3 {
+  margin-top: 2%;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Cabinets_allCards {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1vw;
+  border-radius: 0.5vw;
+}
+
+.Cabinets_Card {
+  width: 100%;
+  height: 100%;
+  /* height: 24vh; */
+  border-radius: 0.5vw;
+  cursor: pointer;
+  color: var(--baseBlack);
+  border-radius: 0.6rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.Cabinets_Card img {
+  width: 100%;
+  object-fit: cover;
+  height: 25vh;
+  /* height: 100%; */
+  transition: 0.5s;
+}
+
+.Cabinets_Card img:hover {
+  transform: scaleX(1.1);
+}
+
+.Cabinets_Card h3 {
+  font-size: 1.3vw;
+  -webkit-line-clamp: 2;
+
+}
+
+.Cabinets_Card h2 {
+  font-size: 1.5vw;
+  color: var(--baseRed);
+}
+
+.Cabinets_top_design {
+  padding: 2% 6.5%;
+  background-color: var(--baseRed);
+  position: absolute;
+  top: 0;
+  font-size: 1vw;
+  color: var(--baseWhite);
+  left: 0;
+}
+
+.mattress_Main_container {
+  display: flex;
+  padding: 0 3.5rem;
+  width: 100%;
+}
+
+/* mattress */
+
+.mattress_container {
+  display: flex;
+  width: 100%;
+  padding-right: 5%;
+  height: 65vh;
+  margin: 4% 0;
+}
+
+.mattress_Details {
+  width: 40%;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.mattress_Image {
+  width: 60%;
+  background: url("../../assets/Home/badImage.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.mattress_Details h1 {
+  font-size: 3vw;
+}
+
+.mattress_Details h2 {
+  font-size: 1.5vw;
+  color: var(--green);
+}
+
+.mattress_Details_circle {
+  height: 2vh;
+  width: 2vh;
+  border-radius: 50%;
+  background-color: var(--green);
+}
+
+.mattress_Details_design {
+  margin-top: 1%;
+  display: flex;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.4rem;
+}
+
+.mattress_Details_Line {
+  height: 90%;
+  width: 100%;
+  border-left: 0.1rem solid var(--green);
+  display: flex;
+  align-items: center;
+}
+
+.mattress_Details_innerLine {
+  height: 1px;
+  width: 100%;
+  background-color: var(--green);
+}
+
+.mattress_Details button {
+  background-color: var(--baseOrange);
+  color: var(--baseWhite);
+  border: none;
+  padding: 1% 3%;
+  font-size: 1.2vw;
+  border-radius: 0.2rem;
+  cursor: pointer;
+  margin-top: 2%;
+}
+
+.warrentyImage {
+  margin-top: 1%;
+  height: 40%;
+  width: 80%;
+  object-fit: contain;
+}
+
+.warrentyImage:hover {
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .Cabinets_Main_container {
+    padding: 3% 1rem;
+  }
+
+  .Cabinets_heading {
+    display: block;
+    text-align: center;
+
+  }
+
+  .Cabinets_heading h2 {
+    font-size: 2.7vh;
+  }
+
+  .Cabinets_heading p {
+    font-size: 1.5vh;
+    margin-bottom: 3%;
+  }
+
+  .Cabinets_allCards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+
+  .Cabinets_Card {
+    height: 30vh;
+  }
+
+  .Cabinets_Card h3 {
+    font-size: 1.5vh;
+  }
+
+  .Cabinets_Card h2 {
+    font-size: 1.7vh;
+  }
+
+  .Cabinets_top_design {
+    font-size: 1.2vh;
+  }
+
+  /* mattress */
+
+  .mattress_Main_container {
+    padding: 0 1rem;
+  }
+
+  .mattress_container {
+    height: auto;
+    flex-direction: column;
+    padding-right: 0%;
+  }
+
+  .mattress_Details {
+    width: 100%;
+    order: -1;
+    align-items: center;
+  }
+
+  .mattress_Image {
+    width: 100%;
+    background: url("../../assets/Home/badImage.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0.4rem;
+    height: 20vh;
+  }
+
+  .mattress_Details h1 {
+    font-size: 3.3vh;
+    margin-top: 3%;
+  }
+
+  .mattress_Details h2 {
+    font-size: 2.6vh;
+  }
+
+  .mattress_Details_circle {
+    height: 2vh;
+    width: 2vh;
+  }
+
+  .mattress_Details_design {
+    margin-top: 1%;
+    display: flex;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 0.4rem;
+  }
+
+  .mattress_Details_Line {
+    width: 100%;
+  }
+
+  .mattress_Details_innerLine {
+    height: 1px;
+    width: 100%;
+    background-color: var(--green);
+  }
+
+  .mattress_Details button {
+    font-size: 1.2vh;
+  }
+
+  .warrentyImage {
+    height: 70%;
+    width: 70%;
+  }
+}

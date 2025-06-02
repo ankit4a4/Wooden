@@ -1,0 +1,110 @@
+.PhoneEditPop_container {
+  height: 25vw;
+  width: 35vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  padding: 1vw;
+  align-items: center;
+  border-radius: 0.5vw;
+  justify-content: center;
+  position: fixed;
+  background-color: #7c8a9b;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.inp_pop_field {
+  height: 3vw;
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.inp_pop_field_btn {
+  padding: 0.6vw 1.3vw;
+  border-radius: 0.2vw;
+
+  border: none;
+  cursor: pointer;
+}
+
+.inp_pop_field_btn:hover {
+  background-color: #1e5799;
+  color: #fff;
+}
+
+.cross_section {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.RxCrossCircled_icon {
+  position: absolute;
+  top: 1vw;
+  font-size: 2vw;
+  right: 1vw;
+  cursor: pointer;
+}
+
+.inp_pop_field input {
+  border: none;
+  outline: none;
+  box-sizing: 2px 4px 4px rgba(0, 0, 0, 0.5);
+  padding: 0.7vw 0.5vw;
+  border-radius: 0.1vw;
+}
+
+.otp_container {
+  gap: 1vw;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.otp_input {
+  height: 5vh;
+  font-size: 2vh;
+  font-weight: 600;
+  color: black;
+  width: 3vw !important;
+}
+
+
+@media screen and (max-width: 768px) {
+  .PhoneEditPop_container {
+    height: 50vw;
+    width: 80vw;
+    position: absolute;
+  }
+  
+  .inp_pop_field {
+    height: 3vh;
+  }
+  
+  
+  .RxCrossCircled_icon {
+    font-size: 2.3vh;
+  }
+  .otp_container {
+    gap: 1vw;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .otp_input {
+    height: 2vh;
+    font-size: 2vh;
+    width: 3vw !important;
+  }
+}
